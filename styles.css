@@ -271,8 +271,16 @@ margin-bottom: 40px;
   color: #7e7895;
 }
 
+.dark .dates{
+  color: #e7faf8d1;
+}
+
 .headings{
   color: #473e66;
+}
+
+.dark .headings{
+  color: #3e3657;
 }
 
 .body_links{
