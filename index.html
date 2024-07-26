@@ -2,30 +2,52 @@
 <html lang="en">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Sai Aparanji Nemmani - Portfolio</title>
+  <title>Sai Aparanji Nemmani | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="#about-subsection">About</a>
-      <a href="#projects-subsection">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="#footer">Contact</a>
-    </nav>
+  <header class="container-fluid">
+    <div class="col-8">
+      <nav class="navbar navbar-expand-lg">
+        <button id="hamButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> --><i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#about-subsection">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-subsection">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    <div class="switch">
+    <!-- <div class="col-4"></div> -->
+    <div class="switch col-4">
       <div class="flicker"></div>
       <div class="moon"></div>
     </div>
   </header>
-  <section id="intro-subsection">
-    <div class="main">
-      <div class="main-text">
-        <p>Hi! <picture>
+  <section id="intro-subsection" class="container-sm">
+    <div class="main container-sm">
+      <div class="main-text container-sm-6">
+        <p class="h6">Hi! <picture>
             <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.webp" type="image/webp">
             <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.gif" alt="👋" width="32"
               height="32">
@@ -33,118 +55,201 @@
           Nice to see you here! I'm</p>
 
         <div class="typewriter">
-          <h2>SAI APARANJI NEMMANI</h2>
+          <h2 class="display-6">SAI APARANJI NEMMANI</h2>
         </div>
         <br />
         <p class="intro_text">A Computer Science Graduate student at Virginia Tech👩‍💻</p>
         <p class="intro_text">Open to Software Engineer/Software Developer/Web Developer
           Full-time/Co-op/Intern opportunities. </p>
-      </div>
-      <div class="image">
-        <img class="image_about" src="images/image_portfolio1.jpg" alt="about_image" />
-      </div>
+        <!-- <div class="footer__icons">
+          <a href="mailto:nsaiaparanji@gmail.com" title="Email me" class="footer__icon">
 
-      <!-- <div class="hero-image">
-        <div class="cube" id="react"></div>
-        <div class="cube" id="javascript"></div>
-        <div class="cube" id="mysql"></div>
-        <div class="cube" id="java"></div>
-        <div class="cube" id="html"></div>
-        <div class="cube" id="css"></div>
-      </div> -->
-    </div>
-  </section>
-  <section class="about-subsection">
-    <div class="about">
-    <h2 class="section-heading">About Me</h2>
-    <div class="about_text">
-      <p class="intro_text">Motivated and detail-oriented Computer Science professional currently pursuing a Master of
-        Engineering at Virginia Tech, with hands-on experience in software engineering, cloud technologies, and
-        full-stack web development. Experienced in automating processes, enhancing test scripts, and developing scalable
-        web applications, with a strong background in both frontend and backend development.</p>
-        <p class="intro_text"><strong>Skills:</strong></p><p class="intro_text"><ul><li>C, CSS 3, HTML 5, Java, JavaScript, PostgreSQL, Python, SQL, Bootstrap, DASH, jQuery, JUnit, React.JS, Selenium, TestNG, Balsamiq, Eclipse, Figma, Firebase, Git, GitHub, IntelliJ, JIRA, Node JS, PyCharm, VS Code, AWS (API Gateway, CloudWatch, EC2, EMR, IAM, Lambda, RDS, Route 53, S3, VPC), Azure DevOps (CI/CD Pipelines), Google Cloud Platform, Oracle Certified Associate, Java SE 8 Programmer (February 2020), Data Structures & Algorithms, Object-Oriented Programming, Web App Development & Cloud Computing</li></ul></p>
-        <p class="intro_text"><a href="https://github.com/aparanji49">GitHub</a></p>
+            <i class="fa fa-envelope-o" style="font-size:36px"></i>
+          </a>
+          <span class="partition"> | </span>
+          <a href="https://www.linkedin.com/in/saiaparanjinemmani/" class="footer__icon" target="_blank"
+            title="LinkedIn">
+
+            <i class="fa fa-linkedin" style="font-size:36px"></i>
+          </a>
+          <span class="partition"> | </span>
+          <a href="https://github.com/aparanji49/" class="footer__icon" target="_blank" title="GitHub">
+            <i class="fa fa-github" style="font-size:36px"></i>
+          </a>
+          <span class="partition"> | </span>
+          <a href="https://www.instagram.com/aparanji_9" class="footer__icon" target="_blank" title="Instagram">
+
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+          </a>
+        </div> -->
       </div>
-  </div>
-  <div class="work">
-    <h2 class="section-heading">Education & Work Experience</h2>
-    <div id="edu-work-section">
-      <div id="education-list">
-        <div class="edu-card">
-          <h4>Masters in Computer Science</h4>
-          <h4><a href="https://www.vt.edu/" target="_blank">Virginia Tech</a></h4>
-          <h4>Aug 2023 - May 2025(Expected)</h4>
-          <div class="info-card">
-            <h4>Coursework:</h4>
-            <ul>
-              <li>Software Engineering</li>
-              <li>Information Visualization</li>
-              <li>User Interface Software</li>
-              <li>Web Application Development</li>
-              <li>Intermediate Data Structures and Algorithms</li>
-              <li>Cloud Computing & Applications</li>
-            </ul>
-          </div>
-        </div>
-        <div class="edu-card">
-          <h4>Bachelor's in Computer Science</h4>
-          <h4><a href="https://vjit.ac.in/" target="_blank">Vidya Jyothi Institute of Technology</a></h4>
-          <h4>Aug 2016 - Aug 2020</h4>
-          <div class="info-card">
-            <h4>Coursework:</h4>
-            <ul>
-              <li>C Programming</li>
-              <li>Data Structures</li>
-              <li>Object Oriented Programming</li>
-              <li>Design and Analysis of Algorithms</li>
-              <li>Database Management Systems</li>
-              <li>Java Programming</li>
-              <li>Linux Programming</li>
-              <li>Operating Systems</li>
-              <li>Formal Languages & Automata Theory</li>
-              <li>Principles of Programming Languages</li>
-              <li>Web Technologies</li>
-              <li>Compiler Design</li>
-              <li>Object Oriented Analysis & Design</li>
-              <li>Mobile Application Development</li>
-              <li>Design Patterns</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="hor-div-line">
-      </div>
-      <div id="work-list">
-        <div class="work-card">
-          <h4>Engineer - Technology</h4>
-          <h4>Feb 2022 - Jul 2023</h4>
-          <h4>Associate Engineer - Technology</h4>
-          <h4>Oct 2020 - Jan 2022</h4>
-          <h4><a href="https://www.virtusa.com/" target="_blank">Virtusa</a></h4>
-          <div class="info-card">
-            <h4>Skills:</h4>
-            <ul>
-              <li>Java</li>
-              <li>GitHub</li>
-              <li>Azure DevOps</li>
-              <li>Atlassian JIRA</li>
-              <li>Teamwork</li>
-              <li>Leadership</li>
-              <li>Training and Knowledge Transfer</li>
-            </ul>
-          </div>
-        </div>
+      <div class="image container-sm-6">
+        <img class="image_about" src="images/mylogo.png" alt="about_image" />
       </div>
     </div>
-  </div>
   </section>
-  <!-- <section id="projects-subsection">
-    <h2 class="section-heading">Projects</h2>
+  <section id="about-subsection" class="container-sm">
+    <div class="about container-sm-6">
+      <h2 class="section-heading display-6">About Me</h2>
+      <div class="about_text">
+        <p class="intro_text">Motivated and detail-oriented Computer Science professional currently pursuing a Master of
+          Engineering at Virginia Tech, with hands-on experience in software engineering, cloud technologies, and
+          full-stack web development. </p><br />
+        <p class="intro_text">Experienced in automating processes, enhancing test scripts, and developing scalable
+          web applications, with a strong background in both frontend and backend development.</p>
+        <br />
+        <p class="intro_text"><strong>Skills:</strong></p>
+        <p class="intro_text">
+        <ul>
+          <li>C, CSS 3, HTML 5, Java, JavaScript, PostgreSQL, Python, SQL, Bootstrap, DASH, jQuery, JUnit, React.JS,
+            Selenium, TestNG, Balsamiq, Eclipse, Figma, Firebase, Git, GitHub, IntelliJ, JIRA, Node JS, PyCharm, VS
+            Code, AWS (API Gateway, CloudWatch, EC2, EMR, IAM, Lambda, RDS, Route 53, S3, VPC), Azure DevOps (CI/CD
+            Pipelines), Google Cloud Platform, Data
+            Structures & Algorithms, Object-Oriented Programming, Web App Development & Cloud Computing</li>
+        </ul>
+        </p>
+        <p class="intro_text"><strong>Certifications:</strong></p>
+        <p class="intro_text"><a class="body_links" 
+            href="https://drive.google.com/file/d/1rsk6J09d8R2gA_lGgQoQFKGFQV_GK5eN/view?usp=sharing"
+            target="_blank">Oracle Certified
+            Associate, Java SE 8 Programmer (February 2020)</a></p>
+      </div>
+    </div>
+    <div class="work container-sm-6">
+      <h2 class="section-heading display-6">Education & Work Experience</h2>
+      <div id="edu-work-section">
+        <div id="education-list">
+          <div class="edu-card">
+            <p class="h4 headings">Masters in Computer Science</p>
+            <p class="h6"><a class="body_links"  href="https://www.vt.edu/" target="_blank">Virginia Tech</a></p>
+            <p class="h6 dates">Aug 2023 - May 2025(Expected)</p>
+            <div class="info-card">
+              <p class="h6">Coursework:</p>
+              <ul>
+                <li>Software Engineering</li>
+                <li>Information Visualization</li>
+                <li>User Interface Software</li>
+                <li>Web Application Development</li>
+                <li>Intermediate Data Structures and Algorithms</li>
+                <li>Cloud Computing & Applications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="edu-card">
+            <p class="h4 headings">Bachelor's in Computer Science</p>
+            <p class="h6"><a class="body_links"  href="https://vjit.ac.in/" target="_blank">Vidya Jyothi Institute of Technology</a></p>
+            <p class="h6 dates">Aug 2016 - Aug 2020</p>
+            <div class="info-card">
+              <p class="h6">Coursework:</p>
+              <ul>
+                <li>C Programming</li>
+                <li>Data Structures</li>
+                <li>Object Oriented Programming</li>
+                <li>Design and Analysis of Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Java Programming</li>
+                <li>Linux Programming</li>
+                <li>Operating Systems</li>
+                <li>Formal Languages & Automata Theory</li>
+                <li>Principles of Programming Languages</li>
+                <li>Web Technologies</li>
+                <li>Compiler Design</li>
+                <li>Object Oriented Analysis & Design</li>
+                <li>Mobile Application Development</li>
+                <li>Design Patterns</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hor-div-line">
+        </div>
+        <div id="work-list">
+          <div class="work-card">
+            <p class="h4 headings">Engineer - Technology</p>
+            <p class="h6 dates">Feb 2022 - Jul 2023</p>
+            <p class="h4 headings">Associate Engineer - Technology</p>
+            <p class="h6 dates">Oct 2020 - Jan 2022</p>
+            <p class="h6"><a class="body_links" href="https://www.virtusa.com/" target="_blank">Virtusa</a></p>
+            <div class="info-card">
+              <p class="h6">Skills:</p>
+              <ul>
+                <li>Java</li>
+                <li>GitHub</li>
+                <li>Azure DevOps</li>
+                <li>Atlassian JIRA</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Training and Knowledge Transfer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects-subsection" class="container-sm">
+    <h2 class="section-heading display-6">Projects</h2>
+
     <div class="sub-section">
-      <div class="square" id="instagram">
+      <div class="project">
+        <div class="project_title">
+          <p class="h6">Enchanted Pages</p>
+        </div>
+        <div class="project_tags_progress"></div>
+        <div class="project_skills_tags">
+          <div class="project_skills_tag">HTML</div>
+          <div class="project_skills_tag">CSS</div>
+          <div class="project_skills_tag">React.js</div>
+          <div class="project_skills_tag">Typescript</div>
+          <div class="project_skills_tag">RESTful APIs</div>
+          <div class="project_skills_tag">MySQL</div>
+          <div class="project_skills_tag">Tomcat</div>
+          <div class="project_skills_tag">AWS</div>
+          <div class="project_skills_tag">Figma</div>
+        </div>
+        <div class="project_body">
+          <div class="project_text">
+            Developed a full stack bookstore web application featuring categorized book modules,
+            best sellers, latest releases, Cart, Order and Confirmation.
+          </div>
+
+        </div>
+        <div class="project_links">
+          <a  class="body_links"  href="http://webdev.cs.vt.edu:8080/AparanjiBookstoreReactTransact/" target="_blank">Website <i
+              class="fa fa-globe"></i></a>
+          <a class="body_links"  href="https://github.com/aparanji49/EnchantedPagesBookstore" target="_blank">GitHub <i
+              class="fa fa-github"></i></a>
+          <a class="body_links"  href="https://youtu.be/KcUSFFzmGrg" target="_blank">Demo Video <i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="project_gif"></div>
+      </div>
+      <div class="project">
+        <div class="project_title">
+          <p class="h6">Instagram Clone</p>
+        </div>
+        <div class="project_tags_progress"></div>
+        <div class="project_skills_tags"></div>
+        <div class="project_body">
+          <div class="project_text"></div>
+          <div class="project_gif"></div>
+        </div>
+        <div class="project_links">
+          <a href="" target="_blank"><i class="fa fa-globe"></i></a>
+          <a href="" target=""><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+      <!-- <div class="project">
+        <div class="project_title"></div>
+        <div class="project_body">
+          <div class="project_text"></div>
+          <div class="project_gif"></div>
+        </div>
+        <div class="project_links"></div>
+      </div> -->
+      <!-- <div class="square" id="instagram">
         <h2>Instagram Clone</h2>
         <p class="project-association">Personal Project|Individual Project</p>
-        <p>A clone of social media application called "Instagram"</p>
+        <p class="h6">A clone of social media application called "Instagram"</p>
         <br />
         <a href="https://github.com/aparanji49" target="_blank">check it out ></a>
       </div>
@@ -152,7 +257,7 @@
         <h2>Vocab Bank</h2>
         <p class="project-association">Personal Project|Individual Project</p>
         <p class="project-progress">In-Progress</p>
-        <p>App for storing vocabulary</p>
+        <p class="h6">App for storing vocabulary</p>
         <br />
         <a href="https://github.com/aparanji49" target="_blank">check it out ></a>
       </div>
@@ -160,7 +265,7 @@
         <h2>Musical Instruments Store</h2>
         <p class="project-association">Personal Project|Individual Project</p>
         <p class="project-progress">Starting Soon :P</p>
-        <p>E-commerce app for Musical Instruments</p>
+        <p class="h6">E-commerce app for Musical Instruments</p>
         <br />
         <a href="https://github.com/aparanji49" target="_blank">check it out ></a>
       </div>
@@ -168,23 +273,40 @@
         <h2>Online Slam Book</h2>
         <p class="project-association">Associated with Virginia Tech|Part of coursework|Individual Project</p>
         <p class="project-progress">In-Progress (Almost Done)</p>
-        <p>A full-stack web application for 10th graders to fill slam book forms after completion of their schooling, to
+        <p class="h6">A full-stack web application for 10th graders to fill slam book forms after completion of their schooling, to
           stay in touch and remember their friends.</p>
         <br />
         <a href="https://github.com/aparanji49" target="_blank">check it out ></a>
-      </div>
+      </div> -->
     </div>
-  </section> -->
-  <footer id="footer">
+  </section>
+  <footer id="footer" class="container-fluid">
     <div class="footer__text">Designed & Developed by Aparanji</div>
     <div class="footer__icons">
-      <a href="mailto:nsaiaparanji@gmail.com" title="Email me" class="footer__icon"><img class="image-icon"
-          src="images/mail.png" alt="Email" /></a>
-      <a href="https://www.linkedin.com/in/saiaparanjinemmani/" class="footer__icon" target="_blank"
-        title="LinkedIn"><img class="image-icon" src="images/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:nsaiaparanji@gmail.com" title="Email me" class="footer__icon">
+
+        <i class="fa fa-envelope-o" style="font-size:36px"></i>
+      </a>
+      <span class="partition"> | </span>
+      <a href="https://www.linkedin.com/in/saiaparanjinemmani/" class="footer__icon" target="_blank" title="LinkedIn">
+
+        <i class="fa fa-linkedin" style="font-size:36px"></i>
+      </a>
+      <span class="partition"> | </span>
+      <a href="https://github.com/aparanji49/" class="footer__icon" target="_blank" title="GitHub">
+        <i class="fa fa-github" style="font-size:36px"></i>
+      </a>
+      <span class="partition"> | </span>
+      <a href="https://www.instagram.com/aparanji_9" class="footer__icon" target="_blank" title="Instagram">
+
+        <i class="fa fa-instagram" style="font-size:36px"></i>
+      </a>
     </div>
   </footer>
   <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
