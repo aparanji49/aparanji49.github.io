@@ -53,7 +53,7 @@ nav a {
 }
 
 
-@media() {
+/* @media() {
   #intro-subsection {
     margin-top: 100px;
   }
@@ -61,7 +61,7 @@ nav a {
   nav {
     flex-direction: column;
   }
-}
+} */
 
 header {
   display: flex;
@@ -304,9 +304,9 @@ color: #d5876a;
 #education-list{
   align-content: space-between;
 }
-.work-card {
+/* .work-card {
   /* margin-top: 50px; */
-}
+/* } */ 
 
 .dark .edu-card,
 .dark .work-card {
@@ -378,9 +378,9 @@ nav a:focus::before {
 
 }
 
-.footer__icons {
+/* .footer__icons { */
   /* align-self: center; */
-}
+/* } */
 
 .footer__icon {
   margin: 0 5px;
