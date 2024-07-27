@@ -263,28 +263,28 @@ footer {
   margin-right: 10px;
 }
 
-.edu-card{
-margin-bottom: 40px;
+.edu-card {
+  margin-bottom: 40px;
 }
 
-.dates{
+.dates {
   color: #7e7895;
 }
 
-.dark .dates{
+.dark .dates {
   color: #e7faf8d1;
 }
 
-.headings{
+.headings {
   color: #473e66;
 }
 
-.dark .headings{
-  color: #3e3657;
+.dark .headings {
+  color: #182638;
 }
 
-.body_links{
-color: #d5876a;
+.body_links {
+  color: #d5876a;
 }
 
 .edu-card,
@@ -297,20 +297,22 @@ color: #d5876a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-#work-list{
+
+#work-list {
   align-content: center;
 }
 
-#education-list{
+#education-list {
   align-content: space-between;
 }
+
 /* .work-card {
   /* margin-top: 50px; */
-/* } */ 
+/* } */
 
 .dark .edu-card,
 .dark .work-card {
-  background-color: #74769A;
+  background-color: #8d7fbbe6;
 }
 
 .edu-card:hover,
@@ -379,7 +381,7 @@ nav a:focus::before {
 }
 
 /* .footer__icons { */
-  /* align-self: center; */
+/* align-self: center; */
 /* } */
 
 .footer__icon {
@@ -470,11 +472,10 @@ nav a:focus::before {
 }
 
 .dark .about_text {
-  background-color: #74769A;
+  background-color: #8d7fbbe6;
 }
 
 .about_text {
-
   background-color: #cdc5e980;
   padding: 30px;
   max-width: 80%;
@@ -516,3 +517,50 @@ a {
   border: none;
 }
 
+.project_skills_tag {
+  width: max-content;
+  height: max-content;
+  border-radius: 10px;
+  color: white;
+  padding: 6px;
+  margin: 5px 10px;
+  background-color: #35156e;
+  font-size: small;
+}
+
+.dark .project_skills_tag{
+  background-color: #182638;
+}
+
+.project_skills_tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.project_details {
+  background-color: #cdc5e980;
+  padding: 20px;
+  margin: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.project {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.project_links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dark .project_details {
+  background-color: #8d7fbbe6;
+}
