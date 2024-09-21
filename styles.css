@@ -421,6 +421,11 @@ nav a:focus::before {
   font-size: x-large;
 }
 
+.project_title, .project_tags_progress, .project_links, .project_header{
+  display: flex;
+  align-items: center;
+}
+
 .typewriter h2 {
   overflow: hidden;
   border-right: 0.15em solid #f1916d;
@@ -572,6 +577,7 @@ a {
 
 .project_links {
   display: flex;
+  gap: 0.2rem;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
