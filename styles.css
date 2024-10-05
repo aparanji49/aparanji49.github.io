@@ -287,7 +287,8 @@ footer {
 }
 
 .dark .body_links {
-  color: #881200;
+  /* color: #881200; */
+  color: #f5d6da;
 }
 .edu-card,
 .work-card {
