@@ -265,9 +265,6 @@ footer {
   margin-right: 10px;
 }
 
-.edu-card {
-  margin-bottom: 40px;
-}
 
 .dates {
   color: #7e7895;
@@ -295,6 +292,7 @@ footer {
 .edu-card,
 .work-card {
   /* margin: 20px; */
+  margin: 2rem;
   /* width: 300px; */
   padding: 20px;
   /* background-color: #cdc5e980; */
@@ -481,8 +479,7 @@ nav a:focus::before {
 }
 
 .resume_image {
-  width: fit-content;
-  height: fit-content;
+  width: 80%;
 }
 
 .resume-section {
@@ -561,7 +558,7 @@ a {
   /* background-color: #cdc5e980; */
   padding: 20px;
   margin: 0;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0.5rem;
   background: rgba(205, 197, 233, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.2px);
@@ -573,6 +570,12 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
+}
+
+.project .row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .project_links {
