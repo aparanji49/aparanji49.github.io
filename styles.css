@@ -463,15 +463,23 @@ nav li a:focus::before {
 }
 
 .dark .about_text, .dark .skills_text {
-  background-color: #8d7fbbe6;
+  background: rgba(141, 127, 187, 0.9019607843137255);
 }
 
 .about_text, .skills_text {
-  background-color: rgba(205, 197, 233, 0.8);
+  /* background-color: rgba(205, 197, 233, 0.8); */
   padding: 30px;
   max-width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+  /* From https://css.glass */
+background: rgba(205, 197, 233, 0.8);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(9.6px);
+border: 1px solid rgba(205, 197, 233, 0.16);
 }
 
 #about-subsection > * {
@@ -626,7 +634,8 @@ a {
 .work-card:hover,
 .about_text:hover,
 .skills_text:hover {
-  border: 0.2rem solid black;
+  /* border: 0.2rem solid black; */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .dark .contact-form-inputs:hover,
@@ -635,7 +644,8 @@ a {
 .dark .work-card:hover,
 .dark .about_text:hover,
 .dark .skills_text:hover {
-  border: 0.2rem solid white;
+  /* border: 0.2rem solid white; */
+  box-shadow: 0 4px 16px rgba(255, 69, 0, 0.2);
 }
 
 .dark .submit-button {
