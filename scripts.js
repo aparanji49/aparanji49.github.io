@@ -60,3 +60,40 @@ async function fetchRepos() {
 
 // Call the function to fetch and display repos
 fetchRepos();
+
+
+async function fetchMediumPosts() {
+  const mediumPostsContainer = document.getElementById('medium-posts');
+  const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@nsaiaparanji';
+
+  try {
+    const response = await axios.get(url);
+    const posts = response.data.items.filter(item => item.categories.length > 0).slice(0, 3);
+
+    posts.forEach(post => {
+      const card = document.createElement('div');
+      card.classList.add('medium-blog-card');
+      card.style.width = '400px';
+      card.style.backgroundColor = '#fff';
+      card.style.borderRadius = '20px';
+      card.style.borderColor = 'black';
+      card.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+      card.style.padding = '2rem';
+      card.style.position = 'relative';
+
+      const icon = `<a href="${post.link}" target="_blank" style="position:absolute; bottom: 1rem; right: 1rem;"><i class="fa-solid fa-up-right-from-square"></i></a>`;
+
+      card.innerHTML = `
+        <h4 style="color:#000000;">${post.title}</h4>
+        <p style="color:#646464; font-size: 0.95rem;">${post.description.split('</p>')[0].replace(/<[^>]+>/g, '').slice(0, 150)}...</p>
+        ${icon}
+      `;
+      mediumPostsContainer.appendChild(card);
+    });
+  } catch (error) {
+    console.error('Failed to fetch Medium posts:', error);
+    mediumPostsContainer.innerHTML = `<p>Unable to load blog posts right now.</p>`;
+  }
+}
+
+fetchMediumPosts();
