@@ -1,23 +1,43 @@
 /**
  * Light and Dark modes
  */
-const switchElement = document.querySelector('.switch')
+const switchElement = document.querySelector('.switch');
 
-switchElement.addEventListener('click', () => {
-  document.body.classList.toggle('dark')
-})
+// switchElement.addEventListener('click', () => {
+//   document.body.classList.toggle('dark')
+// })
 
 
-const button = document.getElementById('hamButton');
-const icon = button.querySelector('i');
+// const button = document.getElementById('hamButton');
+// const icon = button.querySelector('i');
 
-button.addEventListener('click', () => {
-  if (icon.classList.contains('fa-bars')) {
-    icon.classList.replace('fa-bars', 'fa-arrow-left');
-  } else {
-    icon.classList.replace('fa-arrow-left', 'fa-bars');
+// button.addEventListener('click', () => {
+//   if (icon.classList.contains('fa-bars')) {
+//     icon.classList.replace('fa-bars', 'fa-arrow-left');
+//   } else {
+//     icon.classList.replace('fa-arrow-left', 'fa-bars');
+//   }
+// });
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+
+  // Update aria-pressed state dynamically
+  const isDarkMode = document.body.classList.contains('dark');
+  switchElement.setAttribute('aria-pressed', isDarkMode.toString());
+}
+
+// Mouse click toggle
+switchElement.addEventListener('click', toggleDarkMode);
+
+// Keyboard toggle (Space or Enter key)
+switchElement.addEventListener('keydown', (event) => {
+  if (event.code === 'Space' || event.code === 'Enter') {
+    event.preventDefault(); // Prevent scrolling when spacebar is pressed
+    toggleDarkMode();
   }
 });
+
 
 /**
  * Fetching github repositories
@@ -97,3 +117,20 @@ async function fetchMediumPosts() {
 }
 
 fetchMediumPosts();
+
+// ===================================
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove active state from all tabs
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    // Show the selected tab content, hide others
+    const selected = tab.dataset.tab;
+    contents.forEach(c => {
+      c.style.display = (c.dataset.content === selected) ? '' : 'none';
+    });
+  });
+});
