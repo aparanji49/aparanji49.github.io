@@ -5,6 +5,8 @@ import Contact from "@/components/Contact";
 const ContactPage = () => {
   return (
     <>
+      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <Contact />
     </>
   );
