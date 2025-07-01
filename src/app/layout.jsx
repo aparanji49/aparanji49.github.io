@@ -14,11 +14,13 @@ export default function RootLayout({ children }) {
         <Head>
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
+        
         <script src="https://kit.fontawesome.com/3e854f2b72.js" crossOrigin="anonymous" async></script>
       </Head>
       <body className='body_custom'>
       <Navbar />
-        {children}
+       <main className="flex-grow-1">
+        {children}</main>
         <Footer />
         </body>
     </html>

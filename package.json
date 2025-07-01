@@ -2,11 +2,14 @@
   "name": "aparanji-portfolio-next",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aparanji49.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1"
+    "eslint-config-next": "15.3.1",
+    "gh-pages": "^6.3.0"
   }
 }

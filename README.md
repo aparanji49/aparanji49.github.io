@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🧑‍💻 Sai Aparanji Nemmani – Developer Portfolio
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Welcome to my personal developer portfolio, built from scratch using **Next.js**, **Bootstrap**, and modern UI/UX principles. This portfolio showcases my projects, skills, and design aesthetics—crafted with care to reflect my personality as a full-stack developer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ✨ Sleek, minimal, and responsive design
+- 🎨 Custom-designed project cards, section transitions, and layouts
+- 🌐 Multi-section SPA-style navigation using Next.js routing
+- 🧩 Modular and reusable React components
+- 🛠️ Hosted using GitHub Pages with static export (`next export`)
+- 📂 All assets and layout created & organized by me
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🖼️ Live Site
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Hosted on GitHub Pages:  
+👉 [https://aparanji49.github.io](https://aparanji49.github.io)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧪 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend:** React.js (via Next.js)
+- **Styling:** Bootstrap 5, Custom CSS
+- **Icons & Assets:** SVG, Favicon, Hero Illustrations
+- **Hosting:** GitHub Pages (`next export`)
+- **Tooling:** Vite, ESLint, GitHub Actions (optional)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+## 🔐 License & Originality Notice
+
+This portfolio was designed and developed by **Sai Aparanji Nemmani**.  
+All content, layout, and code are **original work** and protected under the [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+
+> Please do not replicate this work without permission or attribution.
+
+---
+
+## 🔗 Connect With Me
+
+- 📫 [LinkedIn](https://www.linkedin.com/in/sai-aparanji-nemmani/)
+- 🌐 [Portfolio](https://aparanji49.github.io)
+- 💻 [GitHub](https://github.com/aparanji49)
+
+---
+
+\`\`\`
+Crafted with care, code, and creativity 💛
+\`\`\`

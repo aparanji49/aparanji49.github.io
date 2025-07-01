@@ -5,6 +5,8 @@ import React from "react";
 const Skills = () => {
   return (
     <section id="skills-subsection" className="skills container">
+      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <h2 className="section-heading display-6">Skills</h2>
 
       <div className="skills-grid">

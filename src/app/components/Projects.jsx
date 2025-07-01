@@ -165,7 +165,8 @@ const projectsData = [
     return (
       <section id="projects-subsection" className="container-sm">
         <h2 className="section-heading display-6">Projects</h2>
-  
+  {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
            {/* Tabs Navigation */}
            <div className="tabs">
         <button
@@ -247,16 +248,16 @@ const projectsData = [
               repos.map((repo, index) => (
                 <div key={index} className="repo">
                   <div>
-                    <img src="images/github-mark-white.png" height="30" width="30" alt="GitHub" />
+                    <img src="/images/github-mark-white.png" height="30" width="30" alt="GitHub" />
                     <h3>{repo.name}</h3>
                   </div>
                   <hr />
                   <div>
-                    <img src="images/info-24.png" height="20" width="20" alt="Info" />
+                    <img src="/images/info-24.png" height="20" width="20" alt="Info" />
                     <p><strong>Description:</strong> {repo.description || 'No description available'}</p>
                   </div>
                   <div>
-                    <img src="images/link-16.png" height="20" width="20" alt="Link" />
+                    <img src="/images/link-16.png" height="20" width="20" alt="Link" />
                     <p><strong>Link: </strong>
                       <a href={`https://www.github.com/${repo.full_name}`} target="_blank">
                         github.com/{repo.full_name}
@@ -264,7 +265,7 @@ const projectsData = [
                     </p>
                   </div>
                   <div>
-                    <img src="images/clock-pending-time-svgrepo-com.png" height="20" width="20" alt="Clock" />
+                    <img src="/images/clock-pending-time-svgrepo-com.png" height="20" width="20" alt="Clock" />
                     <p><strong>Last Updated:</strong> {new Date(repo.updated_at).toLocaleString()}</p>
                   </div>
                 </div>

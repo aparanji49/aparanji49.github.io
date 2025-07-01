@@ -12,6 +12,8 @@ export default function ThemeSwitch() {
 
   return (
     <div className="switch" onClick={toggleTheme} role="button" aria-label="Toggle Theme">
+     {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <div className="flicker"></div>
       <div className="moon"></div>
     </div>

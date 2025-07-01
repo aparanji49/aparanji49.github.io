@@ -19,6 +19,8 @@ const ContactForm = () => {
   return (
     <>
     <section id="contact-form-subsection" className="container-sm">
+     {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <h2 className="section-heading display-6">Contact Me</h2>
       <div className="row contact">
         {/* Left Column */}

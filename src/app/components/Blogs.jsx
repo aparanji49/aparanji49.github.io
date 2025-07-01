@@ -93,6 +93,8 @@ const Blogs = () => {
 
   return (
     <section id="tech-blogs" className="container-sm">
+     {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <h2 className="section-heading display-6">Medium Articles - Tech Blogs</h2>
 
       <div id="medium-posts" className="sub-section" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

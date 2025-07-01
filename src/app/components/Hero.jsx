@@ -11,6 +11,8 @@ import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-ico
 export default function Hero() {
   return (
     <section id="intro-subsection" className="container-sm">
+     {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <div className="main container-sm">
         <div className="main-text container-sm-6">
           <p className="h6">
@@ -62,7 +64,7 @@ export default function Hero() {
         <div className="image container-sm-6">
           <Image
             className="image_about"
-            src="/images/image_portfolio1.jpg" // You should place this image under public/images/
+            src="images/image_portfolio1.jpg" // You should place this image under public/images/
             alt="Sai Aparanji Image"
             width={300}
             height={300}

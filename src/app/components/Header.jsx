@@ -22,9 +22,11 @@ export default function Header() {
 
   return (
     <header className="container-fluid d-flex justify-content-between align-items-center p-3">
+      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       <nav className="navbar navbar-expand-lg menu">
         <a href="/" className="navbar-brand" >
-          <Image src="/images/logo_portfolio.png" alt="Logo" width={70} height={70} />
+          <Image src="images/logo_portfolio.png" alt="Logo" width={70} height={70} />
         </a>
 
         <button

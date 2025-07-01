@@ -7,10 +7,13 @@ import React from 'react';
 import Link from 'next/link';
 const Footer = () => {
   return (
-    <footer id="footer" className="container-fluid">
+    // <div class="footer_wrapper">
+    
+    <footer className="text-center py-3 mt-auto">  {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
       {/* Copyright information */}
       <div className="footer__text">Designed & Developed by Aparanji</div>
-      <p>© 2024 Aparanji. All Rights Reserved.</p>
+      <p style={{fontSize:"0.95rem"}}>© 2024 Aparanji. All Rights Reserved.</p>
 
       {/* Icons */}
       <div className="footer__icons">
@@ -28,6 +31,7 @@ const Footer = () => {
             </Link>
       </div>
     </footer>
+    // </div>
   );
 };
 

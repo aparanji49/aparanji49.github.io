@@ -34,10 +34,11 @@ export default function Navbar() {
 
   return (
     <header className={`container-fluid ${isSticky ? "sticky-header" : ""}`}>
- 
+ {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+
         <nav className="navbar navbar-expand-lg menu">
           <Link className="navbar-brand" href="/">
-            <img src="/images/logo_portfolio.png" alt="Portfolio Logo" height="70" width="70" />
+            <img src="images/logo_portfolio.png" alt="Portfolio Logo" height="70" width="70" />
           </Link>
           <button
             id="hamButton"
