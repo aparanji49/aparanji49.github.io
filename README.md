@@ -33,14 +33,6 @@ Hosted on GitHub Pages:
 - **Tooling:** Vite, ESLint, GitHub Actions (optional)
 
 ---
-## 🔐 License & Originality Notice
-
-This portfolio was designed and developed by **Sai Aparanji Nemmani**.  
-All content, layout, and code are **original work** and protected under the [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
-
-> Please do not replicate this work without permission or attribution.
-
----
 
 ## 🔗 Connect With Me
 
