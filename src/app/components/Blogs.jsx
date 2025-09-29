@@ -72,11 +72,12 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
-
+  const [numPosts,setNumPosts] = useState(0);
   const fetchMediumPosts = async () => {
     const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@nsaiaparanji';
     try {
       const response = await axios.get(url);
+     setNumPosts(response.data.items.length);
       const filteredPosts = response.data.items
         .filter(item => item.categories.length > 0)
         .slice(0, 3);
@@ -96,9 +97,10 @@ const Blogs = () => {
      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
       <h2 className="section-heading display-6">Medium Articles - Tech Blogs</h2>
-
+<p>Recent articles:</p>
       <div id="medium-posts" className="sub-section" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         {error && <p>{error}</p>}
+        
         {posts.map(post => (
           <div
             key={post.guid}
@@ -129,7 +131,7 @@ const Blogs = () => {
           className="mail-button"
           onClick={() => window.open('https://medium.com/@nsaiaparanji', '_blank')}
         >
-          View More
+            View All {numPosts} Articles
         </button>
       </div>
     </section>

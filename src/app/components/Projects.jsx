@@ -3,20 +3,21 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 const projectsData = [
-    {
-      title: "Musical Instrument Store",
-      image: "/images/musical-instrument-store.png",
-      liveLink: "#",
-      githubLink: "https://github.com/aparanji49/musical-instrument-store",
-      demoLink:"#",
-      tags: ["React.js", "Next.js", "Redux", "Node.js", "Express.js", "GraphQL", "MongoDB", "Stripe API", "Three.js", "Gemini API", "OpenAI API", "AWS", "Terraform", "CI/CD", "Tailwind CSS", "Figma (Wireframes)"],
-      categories: ["fullstack", "uiux"] ,
-      description: `A next-generation e-commerce platform featuring 3D previews, Stripe integration, AI chatbot with Gemini and OpenAI APIs, deployed on AWS using Terraform.`
-    },
+    // {
+    //   title: "Musical Instrument Store",
+    //   image: "/images/musical-instrument-store.png",
+    //   liveLink: "#",
+    //   githubLink: "https://github.com/aparanji49/musical-instrument-store",
+    //   demoLink:"#",
+    //   tags: ["React.js", "Next.js", "Redux", "Node.js", "Express.js", "GraphQL", "MongoDB", "Stripe API", "Three.js", "Gemini API", "OpenAI API", "AWS", "Terraform", "CI/CD", "Tailwind CSS", "Figma (Wireframes)"],
+    //   categories: ["fullstack", "uiux"] ,
+    //   description: `A next-generation e-commerce platform featuring 3D previews, Stripe integration, AI chatbot with Gemini and OpenAI APIs, deployed on AWS using Terraform.`
+    // },
     {
       title: "Vocab Bank",
       image: "/images/vocabbank-gif.gif",
@@ -207,12 +208,13 @@ const projectsData = [
           <div key={index} className="project container project-card">
             <div className="row">
               <div className="project_gif col-lg-4 col-sm-12">
-                <img src={project.image} alt={project.title} />
+                {/* <img src={project.image} alt={project.title} /> */}
+                <Image src={project.image} alt={project.title} width={480} height={270} />
               </div>
               <div className="col-lg-8 project_details col-sm-12">
                 <div className="project_header">
                   <p className="h4 headings mb-0">{project.title}</p>
-                  <div className="project_links">
+                  <div className="project_links" role="group" aria-label={`${project.title} links`}>
                    {project.liveLink !== "#" &&  <a className="body_links" href={project.liveLink} target="_blank" rel="noopener noreferrer">
                       Website <FontAwesomeIcon icon={faGlobe} />
                       {/* <i className="fa fa-globe"></i>  */}

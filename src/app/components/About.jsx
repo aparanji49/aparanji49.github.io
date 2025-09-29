@@ -66,7 +66,7 @@ const About = () => {
         <h2 className="section-heading display-6">About Me</h2>
 
         {/* Technical Profile Card */}
-        <div className="about_text card-box">
+        {/* <div className="about_text card-box">
           <p className="intro_text">
             I’m a <strong>recent Computer Science graduate</strong> from <strong>Virginia Tech</strong> (May 2025) with a passion for building elegant, scalable, and human-centered web applications.
           </p>
@@ -95,8 +95,52 @@ const About = () => {
           <p className="intro_text">
             I'm a fast learner who thrives on <strong>understanding systems deeply</strong> and building <strong>solutions that matter</strong>.
           </p>
-        </div>
+        </div> */}
+<div className="about_text card-box">
+  <p className="intro_text">
+    I’m a Computer Science graduate from <strong>Virginia Tech</strong> who builds
+    accessible, scalable web applications end to end.
+  </p>
 
+  <p className="intro_text">
+    On the frontend I work with <strong>React/Next.js</strong>, <strong>TypeScript</strong>,
+    <strong> Tailwind</strong>, and <strong>Framer Motion</strong>. On the backend I use
+    <strong> Java Spring Boot</strong> with <strong>Hibernate/JPA</strong> and, when it fits,
+    <strong> Node/Express</strong>.
+  </p>
+
+  <p className="intro_text">
+    I’m comfortable with <strong>MySQL</strong>, <strong>PostgreSQL</strong>, and
+    <strong> MongoDB</strong>, and I deploy to <strong>AWS</strong> using
+    <strong> EC2</strong>, <strong>RDS</strong>, <strong>S3</strong>, <strong>Lambda</strong>,
+    <strong> API Gateway</strong>, <strong>Docker</strong>, and <strong>CI/CD</strong>.
+  </p>
+
+  <p className="intro_text">
+    I’ve delivered features in industry settings at <strong>Virtusa</strong> and
+    <strong> Bunchful</strong>, collaborating from requirements through release. I value
+    typed APIs, readable code, and practical UX.
+  </p>
+
+  <p className="intro_text">
+    I’m also exploring <strong>GraphQL</strong>, <strong>React Query</strong>,
+    <strong> Zod</strong>, and AI tooling with <strong>OpenAI</strong> and <strong>LangChain</strong>.
+  </p>
+
+  <p className="intro_text">
+    <strong>Oracle Certified Associate — Java SE 8</strong> (
+    <a
+      className="body_links"
+      href="https://drive.google.com/file/d/1rsk6J09d8R2gA_lGgQoQFKGFQV_GK5eN/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Java SE 8 certification"
+    >
+      view certification
+    </a>
+    ).
+  </p>
+</div>
         {/* Personal Hobbies Card */}
         {/* <div className="about_text card-box mt-3">
           <h3 className="section-subheading mb-2">Beyond Code</h3>

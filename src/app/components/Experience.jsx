@@ -11,6 +11,31 @@ const Experience = () => {
       <div id="edu-work-section">
         {/* new lines start */}
         {/* <div id="education-list"> */}
+        
+ <div className="work-card">
+            <p className="h4 headings">Software Engineer</p>
+            <p className="h6 dates">July 2025 - Present</p>
+            <p className="h6">
+              <a className="body_links" href="https://www.vt.edu/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/vt_logo.png" alt="Virginia Tech" className="logos" />
+                <span style={{paddingLeft:"20px"}}>Virginia Tech</span>
+              </a>
+            </p>
+            <div className="info-card">
+              <p className="h6">Skills:</p>
+              <ul>
+                <li>React</li>
+                <li>GitLab</li>
+                <li>MongoDB</li>
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Full Stack Web Application Development</li>
+                <li>Teamwork</li>
+                <li>Technical Documentation</li>
+              </ul>
+            </div>
+            {/* <img src="/images/location.png" alt="Pin" className="timeline-pin right-pin" style={{ top: "680px" }} /> */}
+          </div>
           <div className="edu-card">
             <p className="h4 headings">Masters in Computer Science</p>
             <p className="h6 dates">Aug 2023 - May 2025</p>
@@ -40,8 +65,10 @@ const Experience = () => {
              {/* <img src="/images/location.png" alt="Pin" className="timeline-pin left-pin" style={{ top: "680px" }} /> */}
 
           </div>
+          
           {/* Divider */}
         <div className="hor-div-line"></div>
+        
         <div className="work-card">
             <p className="h4 headings">Full Stack Web Developer Intern</p>
             <p className="h6 dates">Aug 2024 - Nov 2024</p>
@@ -136,10 +163,11 @@ const Experience = () => {
             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin right-pin" style={{ top: "680px" }} /> */}
           </div>
           
-        <img src="/images/location.png" className="timeline-pin" style={{ top: "10%", left: "calc(50% - 18px)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "30%", left: "calc(50% + 20px)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "50%", left: "calc(50% + 20px)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "80%" , left: "calc(50% - 18px)" }} />
+        <img src="/images/location.png" className="timeline-pin" style={{ top: "5%", left: "calc(50%)" }} />
+<img src="/images/location.png" className="timeline-pin" style={{ top: "20%", left: "calc(50%)" }} />
+<img src="/images/location.png" className="timeline-pin" style={{ top: "40%", left: "calc(50%)" }} />
+<img src="/images/location.png" className="timeline-pin" style={{ top: "50%" , left: "calc(50%)" }} />
+<img src="/images/location.png" className="timeline-pin" style={{ top: "80%" , left: "calc(50%)" }} />
       </div>
     </section>
   );
