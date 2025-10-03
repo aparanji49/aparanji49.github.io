@@ -10,7 +10,8 @@ export default function Home() {
   return (
    <>
       {/* <Header /> */}
-
+    <script data-goatcounter="https://aparanji.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
       <Hero />
       {/* <About /> */}
       {/* <Skills /> */}
