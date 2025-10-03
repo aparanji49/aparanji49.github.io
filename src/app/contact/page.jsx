@@ -1,6 +1,6 @@
 // src/app/contact/page.jsx
 
-import Contact from "@/components/Contact";
+import Contact from "../components/Contact";
 
 const ContactPage = () => {
   return (

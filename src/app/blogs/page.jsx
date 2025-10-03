@@ -1,6 +1,6 @@
 // src/app/blogs/page.jsx
 
-import Blogs from "@/components/Blogs";
+import Blogs from "../components/Blogs";
 
 const BlogsPage = () => {
   return (

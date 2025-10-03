@@ -1,6 +1,6 @@
 // src/app/skills/page.jsx
 
-import Skills from "@/components/Skills";
+import Skills from "../components/Skills";
 
 const SkillsPage = () => {
   return (
