@@ -2,6 +2,7 @@
 'use client'; 
 
 import React, { useEffect } from 'react';
+import EmojiCursor from './EmojiCursor';
 
 
 const ContactForm = () => {
@@ -55,7 +56,8 @@ const ContactForm = () => {
           </div>
       </div>
     </section>
-
+ <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"📨"}/>
+    
     </>
   );
 };

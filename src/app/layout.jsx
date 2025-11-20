@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { GCScript } from "next-goatcounter";
 // import AnalyticsTracker from "./analytics-tracker";
 export const metadata = {
   title: "Sai Aparanji Nemmani | Full Stack Developer | Cloud & AI Enthusiast",
@@ -10,6 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
         <Head>
@@ -21,9 +23,13 @@ export default function RootLayout({ children }) {
       </Head>
       <body className='body_custom'>
       <Navbar />
-       <main className="flex-grow-1">
+      <GCScript siteUrl={"https://aparanji.goatcounter.com/count"} /> 
+      <main className="flex-grow-1">
         {children}</main>
         <Footer />
+        
+        {/* <script data-goatcounter="https://aparanji.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script> */}
         
         {/* <AnalyticsTracker /> */}
         </body>

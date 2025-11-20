@@ -7,17 +7,18 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import EmojiCursor from './EmojiCursor';
 const projectsData = [
-    // {
-    //   title: "Musical Instrument Store",
-    //   image: "/images/musical-instrument-store.png",
-    //   liveLink: "#",
-    //   githubLink: "https://github.com/aparanji49/musical-instrument-store",
-    //   demoLink:"#",
-    //   tags: ["React.js", "Next.js", "Redux", "Node.js", "Express.js", "GraphQL", "MongoDB", "Stripe API", "Three.js", "Gemini API", "OpenAI API", "AWS", "Terraform", "CI/CD", "Tailwind CSS", "Figma (Wireframes)"],
-    //   categories: ["fullstack", "uiux"] ,
-    //   description: `A next-generation e-commerce platform featuring 3D previews, Stripe integration, AI chatbot with Gemini and OpenAI APIs, deployed on AWS using Terraform.`
-    // },
+    {
+      title: "Musical Instrument Store",
+      image: "/images/MIS.png",
+      liveLink: "https://musical-instrument-store.vercel.app/",
+      githubLink: "https://github.com/aparanji49/MusicalInstrumentStore/",
+      demoLink:"#",
+      tags: ["React","Vite", "TypeScript", "Redux", "Node.js", "Express", "GraphQL", "MongoDB", "Stripe", "OpenAI", "TailwindCSS", "Figma (Wireframes)", "Google OAuth"],
+      categories: ["fullstack", "uiux"] ,
+      description: `A modern full-stack e-commerce application with cart and checkout (Stripe), Google OAuth login, and lightweight AI-powered product suggestions using the OpenAI API. Deployed on Vercel, Render, and MongoDB Atlas.`
+    },
     {
       title: "Vocab Bank",
       image: "/images/vocabbank-gif.gif",
@@ -164,6 +165,7 @@ const projectsData = [
       fetchRepos();
     }, []);
     return (
+      <>
       <section id="projects-subsection" className="container-sm">
         <h2 className="section-heading display-6">Projects</h2>
   {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
@@ -203,15 +205,15 @@ const projectsData = [
       </div>
 
       {/* Tabs Content */}
-      <div className="tab-content">
+      <div className="tab-content project-grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="project container project-card">
-            <div className="row">
-              <div className="project_gif col-lg-4 col-sm-12">
+          <div key={index} className="project project-card">
+            <div className="project-content-vertical">
+              <div className="project_gif">
                 {/* <img src={project.image} alt={project.title} /> */}
                 <Image src={project.image} alt={project.title} width={480} height={270} />
               </div>
-              <div className="col-lg-8 project_details col-sm-12">
+              <div className="project_details">
                 <div className="project_header">
                   <p className="h4 headings mb-0">{project.title}</p>
                   <div className="project_links" role="group" aria-label={`${project.title} links`}>
@@ -276,6 +278,8 @@ const projectsData = [
           </div>
         </div>
       </section>
+       <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"🌐"}/>
+          </>
     );
   };
   

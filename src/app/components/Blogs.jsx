@@ -68,6 +68,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+// import InstagramCarousel from "./InstagramCarousel";
+import EmblaInstagramCarousel from "./EmblaInstagramCarousel";
+import EmojiCursor from './EmojiCursor';
+const OPTIONS = { loop: true }; // tweak as you like
 
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
@@ -93,6 +97,7 @@ const Blogs = () => {
   }, []);
 
   return (
+    <>
     <section id="tech-blogs" className="container-sm">
      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
@@ -134,7 +139,39 @@ const Blogs = () => {
             View All {numPosts} Articles
         </button>
       </div>
+
+       {/* 👇 New Intro + Instagram Carousel */}
+{/* 
+
+      <InstagramCarousel
+        posts={[
+          "https://www.instagram.com/p/CZJ5IVFpASj/", //part 1
+          "https://www.instagram.com/p/CZY-EuXpOjg/", //part 2
+          "https://www.instagram.com/p/CaMdBSwJUTm/", //part 3
+          "https://www.instagram.com/p/CahtZYwpQuV/", //part 4
+          "https://www.instagram.com/p/CbSoAugJERj/", //part 5
+          "https://www.instagram.com/p/CcLB4sqJTxP/", //part 6
+          "https://www.instagram.com/p/CchvR5QpPB4/", //part 7
+          
+        ]}
+        title="Tech via Memes (Telugu) — 2022"
+      /> */}
+
+      <EmblaInstagramCarousel
+  options={OPTIONS}
+  posts={[
+  "https://www.instagram.com/p/CZJ5IVFpASj/", //part 1
+          "https://www.instagram.com/p/CZY-EuXpOjg/", //part 2
+          "https://www.instagram.com/p/CaMdBSwJUTm/", //part 3
+          "https://www.instagram.com/p/CahtZYwpQuV/", //part 4
+          "https://www.instagram.com/p/CbSoAugJERj/", //part 5
+          "https://www.instagram.com/p/CcLB4sqJTxP/", //part 6
+          "https://www.instagram.com/p/CchvR5QpPB4/", //part 7
+  ]}
+/>
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"📝"}/>
+        </>
   );
 };
 

@@ -10,9 +10,11 @@ import {
   faLinkedin,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
+import EmojiCursor from './EmojiCursor';
 
 export default function Hero() {
   return (
+    <>
     <section id="intro-subsection" className="container-sm">
       {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
@@ -101,5 +103,7 @@ export default function Hero() {
         </div>
       </div>
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"😀"}/>
+    </>
   );
 }

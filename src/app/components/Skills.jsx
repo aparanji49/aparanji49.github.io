@@ -1,9 +1,11 @@
 "use client";
 
 import React from "react";
+import EmojiCursor from "./EmojiCursor";
 
 const Skills = () => {
   return (
+    <>
     <section id="skills-subsection" className="skills container">
       {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
@@ -97,6 +99,8 @@ const Skills = () => {
 
       </div>
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"🛠️"}/>
+        </>
   );
 };
 

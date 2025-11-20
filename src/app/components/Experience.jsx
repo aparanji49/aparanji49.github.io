@@ -1,9 +1,11 @@
 "use client";
 
 import React from "react";
+import EmojiCursor from "./EmojiCursor";
 
 const Experience = () => {
   return (
+    <>
     <section id="experience-subsection" className="work container-sm-6">
       <h2 className="section-heading display-6">Education & Work Experience</h2>
 {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
@@ -170,6 +172,8 @@ const Experience = () => {
 <img src="/images/location.png" className="timeline-pin" style={{ top: "80%" , left: "calc(50%)" }} />
       </div>
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"💼"}/>
+    </>
   );
 };
 

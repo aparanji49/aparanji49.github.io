@@ -4,6 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
+import EmojiCursor from "./EmojiCursor";
 const designsData = [
   
    {
@@ -66,6 +67,7 @@ const designsData = [
 
 const Designs = () => {
   return (
+    <>
     <section id="designs" className="container-sm" style={{marginTop: '2rem', marginBottom: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <h2 className="section-heading display-6">UI/UX Designs for my projects</h2>
       {designsData.map((design, index) => (
@@ -101,6 +103,8 @@ const Designs = () => {
                   </div>))}
     
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"👩‍🎨"}/>
+        </>
   );
 };
 export default Designs;

@@ -26,7 +26,7 @@ export default function Header() {
 
       <nav className="navbar navbar-expand-lg menu">
         <a href="/" className="navbar-brand" >
-          <Image src={"/images/logo_portfolio.png"} alt="Logo" width={70} height={70} />
+          <Image src={"images/logo_portfolio.png"} alt="Logo" width={70} height={70} />
         </a>
 
         <button

@@ -55,9 +55,11 @@
 
 import React from "react";
 import Image from "next/image";
+import EmojiCursor from "./EmojiCursor";
 
 const About = () => {
   return (
+    <>
     <section id="about-subsection" className="container-sm space-y-10">
       {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
@@ -220,6 +222,8 @@ const About = () => {
         </div>
       </div>
     </section>
+     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"😄"}/>
+        </>
   );
 };
 
