@@ -70,7 +70,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 // import InstagramCarousel from "./InstagramCarousel";
 import EmblaInstagramCarousel from "./EmblaInstagramCarousel";
-import EmojiCursor from './EmojiCursor';
+// import EmojiCursor from './EmojiCursor';
 const OPTIONS = { loop: true }; // tweak as you like
 
 const Blogs = () => {
@@ -170,7 +170,7 @@ const Blogs = () => {
   ]}
 />
     </section>
-     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"📝"}/>
+     {/* <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"📝"}/> */}
         </>
   );
 };

@@ -1,26 +1,37 @@
 "use client";
 
 import React from "react";
-import EmojiCursor from "./EmojiCursor";
+// import EmojiCursor from "./EmojiCursor";
 
 const Experience = () => {
   return (
     <>
-    <section id="experience-subsection" className="work container-sm-6">
-      <h2 className="section-heading display-6">Education & Work Experience</h2>
-{/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
+      <section id="experience-subsection" className="work container-sm-6">
+        <h2 className="section-heading display-6">
+          Education & Work Experience
+        </h2>
+        {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
-      <div id="edu-work-section">
-        {/* new lines start */}
-        {/* <div id="education-list"> */}
-        
- <div className="work-card">
-            <p className="h4 headings">Software Engineer</p>
+        <div id="edu-work-section">
+          {/* new lines start */}
+          {/* <div id="education-list"> */}
+
+          <div className="work-card">
+            <p className="highlight_text_bold">Software Engineer</p>
             <p className="h6 dates">July 2025 - Present</p>
             <p className="h6">
-              <a className="body_links" href="https://www.vt.edu/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/vt_logo.png" alt="Virginia Tech" className="logos" />
-                <span style={{paddingLeft:"20px"}}>Virginia Tech</span>
+              <a
+                className="body_links"
+                href="https://www.vt.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/vt_logo.png"
+                  alt="Virginia Tech"
+                  className="logos"
+                />
+                <span style={{ paddingLeft: "20px" }}>Virginia Tech</span>
               </a>
             </p>
             <div className="info-card">
@@ -39,13 +50,22 @@ const Experience = () => {
             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin right-pin" style={{ top: "680px" }} /> */}
           </div>
           <div className="edu-card">
-            <p className="h4 headings">Masters in Computer Science</p>
+            <p className="highlight_text_bold">Masters in Computer Science</p>
             <p className="h6 dates">Aug 2023 - May 2025</p>
             <p className="h6 dates">GPA: 3.88/4</p>
             <p className="h6">
-              <a className="body_links" href="https://www.vt.edu/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/vt_logo.png" alt="Virginia Tech" className="logos" />
-                <span style={{paddingLeft:"20px"}}>Virginia Tech</span>
+              <a
+                className="body_links"
+                href="https://www.vt.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/vt_logo.png"
+                  alt="Virginia Tech"
+                  className="logos"
+                />
+                <span style={{ paddingLeft: "20px" }}>Virginia Tech</span>
               </a>
             </p>
             <div className="info-card">
@@ -63,21 +83,29 @@ const Experience = () => {
                 <li>Ethics and Professionalism in Computer Science</li>
                 <li>Capstone Project</li>
               </ul>
-            </div> 
-             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin left-pin" style={{ top: "680px" }} /> */}
-
+            </div>
+            {/* <img src="/images/location.png" alt="Pin" className="timeline-pin left-pin" style={{ top: "680px" }} /> */}
           </div>
-          
+
           {/* Divider */}
-        <div className="hor-div-line"></div>
-        
-        <div className="work-card">
-            <p className="h4 headings">Full Stack Web Developer Intern</p>
+          <div className="hor-div-line"></div>
+
+          <div className="work-card">
+            <p className="highlight_text_bold">Full Stack Web Developer Intern</p>
             <p className="h6 dates">Aug 2024 - Nov 2024</p>
             <p className="h6">
-              <a className="body_links" href="https://bunchful.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/bunchful_logo.png" alt="Bunchful" className="logos" />
-                <span style={{paddingLeft:"20px"}}>Bunchful Enterprise</span>
+              <a
+                className="body_links"
+                href="https://bunchful.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/bunchful_logo.png"
+                  alt="Bunchful"
+                  className="logos"
+                />
+                <span style={{ paddingLeft: "20px" }}>Bunchful Enterprise</span>
               </a>
             </p>
             <div className="info-card">
@@ -96,15 +124,22 @@ const Experience = () => {
             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin right-pin" style={{ top: "680px" }} /> */}
           </div>
 
-        {/* </div> */}
-        <div className="edu-card">
-            <p className="h4 headings">Bachelor's in Computer Science</p>
+          {/* </div> */}
+          <div className="edu-card">
+            <p className="highlight_text_bold">Bachelor's in Computer Science</p>
             <p className="h6 dates">Aug 2016 - Aug 2020</p>
-            <p className="h6 dates">GPA: 8.92/10 (3.67/4)</p>
+            <p className="h6 dates">GPA: 8.92/10</p>
             <p className="h6">
-              <a className="body_links" href="https://vjit.ac.in/" target="_blank" rel="noopener noreferrer">
+              <a
+                className="body_links"
+                href="https://vjit.ac.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/vjit_logo.png" alt="VJIT" className="logos" />
-                <span style={{paddingLeft:"20px"}}>Vidya Jyothi Institute of Technology</span>
+                <span style={{ paddingLeft: "20px" }}>
+                  Vidya Jyothi Institute of Technology
+                </span>
               </a>
             </p>
             <div className="info-card">
@@ -130,29 +165,35 @@ const Experience = () => {
             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin left-pin" style={{ top: "680px" }} /> */}
           </div>
 
-        {/* <div id="work-list"> */}
-         
-          
-          
-          
+          {/* <div id="work-list"> */}
+
           <div className="work-card">
-          <p class="h4 headings">Software Engineer</p>
-            <p class="h6 dates">Feb 2022 - Jul 2023</p>
-            <p class="h4 headings">Associate Software Engineer</p>
-            <p class="h6 dates">Oct 2020 - Jan 2022</p>
+            <p className="highlight_text_bold">Software Engineer</p>
+            <p className="h6 dates">Feb 2022 - Jul 2023</p>
+            <p className="highlight_text_bold">Associate Software Engineer</p>
+            <p className="h6 dates">Oct 2020 - Jan 2022</p>
             <p className="h6">
-              <a className="body_links" href="https://www.virtusa.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/virtusa_logo.png" alt="Virtusa" className="logos" />
-                <span style={{paddingLeft:"20px"}}>Virtusa</span>
+              <a
+                className="body_links"
+                href="https://www.virtusa.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/virtusa_logo.png"
+                  alt="Virtusa"
+                  className="logos"
+                />
+                <span style={{ paddingLeft: "20px" }}>Virtusa</span>
               </a>
             </p>
             <div className="info-card">
               <p className="h6">Skills:</p>
               <ul>
-                 <li>React</li>
-                 <li>Jest</li>
-                 <li>MySQL</li>
-                 <li>Spring Boot</li>
+                <li>React</li>
+                <li>Jest</li>
+                <li>MySQL</li>
+                <li>Spring Boot</li>
                 <li>Java</li>
                 <li>GitHub</li>
                 <li>Azure DevOps (CI/CD Pipelines)</li>
@@ -164,15 +205,34 @@ const Experience = () => {
             </div>
             {/* <img src="/images/location.png" alt="Pin" className="timeline-pin right-pin" style={{ top: "680px" }} /> */}
           </div>
-          
-        <img src="/images/location.png" className="timeline-pin" style={{ top: "5%", left: "calc(50%)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "20%", left: "calc(50%)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "40%", left: "calc(50%)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "50%" , left: "calc(50%)" }} />
-<img src="/images/location.png" className="timeline-pin" style={{ top: "80%" , left: "calc(50%)" }} />
-      </div>
-    </section>
-     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"💼"}/>
+
+          <img
+            src="/images/location.png"
+            className="timeline-pin"
+            style={{ top: "5%", left: "calc(50%)" }}
+          />
+          <img
+            src="/images/location.png"
+            className="timeline-pin"
+            style={{ top: "20%", left: "calc(50%)" }}
+          />
+          <img
+            src="/images/location.png"
+            className="timeline-pin"
+            style={{ top: "40%", left: "calc(50%)" }}
+          />
+          <img
+            src="/images/location.png"
+            className="timeline-pin"
+            style={{ top: "50%", left: "calc(50%)" }}
+          />
+          <img
+            src="/images/location.png"
+            className="timeline-pin"
+            style={{ top: "80%", left: "calc(50%)" }}
+          />
+        </div>
+      </section>
     </>
   );
 };

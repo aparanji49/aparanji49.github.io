@@ -31,21 +31,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head'
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from 'next/script';
 export const metadata = {
   title: "Sai Aparanji Nemmani | Full Stack Developer | Cloud & AI Enthusiast",
-  description: "Portfolio of Sai Aparanji Nemmani — Full Stack Developer skilled in React.js, AWS Cloud, Data Applications, and Machine Learning Deployment.",
+  description: "Portfolio of Sai Aparanji Nemmani — Full Stack, Cloud, Data Applications, and Machine Learning Deployment.",
+    icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <Head>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+        {/* <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <script src="https://kit.fontawesome.com/3e854f2b72.js" crossOrigin="anonymous" async></script>
-      </Head>
+         */}
+         <Script
+  src="https://platform.linkedin.com/badges/js/profile.js"
+  strategy="afterInteractive"
+/>
+
+<Script
+  src="https://kit.fontawesome.com/3e854f2b72.js"
+  crossOrigin="anonymous"
+  strategy="afterInteractive"
+/>
       <body className='body_custom'>
       <Navbar />
+      <main style={{ flex: 1 }}>
         {children}
+        </main>
         <Footer />
         </body>
     </html>

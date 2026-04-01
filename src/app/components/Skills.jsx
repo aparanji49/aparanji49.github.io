@@ -1,106 +1,184 @@
 "use client";
 
 import React from "react";
-import EmojiCursor from "./EmojiCursor";
 
 const Skills = () => {
   return (
-    <>
     <section id="skills-subsection" className="skills container">
-      {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
-
       <h2 className="section-heading display-6">Skills</h2>
 
       <div className="skills-grid">
-        {/* Programming Languages */}
+
+        {/* Frontend Engineering */}
         <div className="skill-card">
-          <h5>Programming Languages</h5>
+          <p className="subheading_text">Frontend Engineering</p>
           <ul className="skills-icons">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" /><span>Java</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" /><span>Python</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" /><span>TypeScript</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" /><span>C</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" /><span>Kotlin</span></li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+              <span>React</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+              <span>Next.js</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+              <span>TypeScript</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+              <span>HTML</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+              <span>CSS</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" alt="Framer Motion" />
+              <span>Framer Motion</span>
+            </li>
+            <li>
+              <img
+                src="https://raw.githubusercontent.com/TanStack/query/main/media/logo.svg"
+                alt="React Query"
+              />
+              <span>React Query</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" alt="Redux" />
+              <span>Redux</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+              <span>Tailwind CSS</span>
+            </li>
           </ul>
         </div>
 
-        {/* Frontend Development */}
+        {/* Backend & AI */}
         <div className="skill-card">
-          <h5>Frontend Development</h5>
+          <p className="subheading_text">Backend & AI</p>
           <ul className="skills-icons">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" /><span>React</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" /><span>HTML5</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" /><span>CSS3</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" /><span>Bootstrap</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" alt="Material UI" /><span>Material UI</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg" alt="React Bootstrap" /><span>React Bootstrap</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" alt="React Router" /><span>React Router DOM</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" alt="jQuery" /><span>jQuery</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original-wordmark.svg" alt="Framer Motion" /><span>Framer Motion</span></li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+              <span>Java</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" />
+              <span>Spring Boot</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              <span>Node.js</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" />
+              <span>Express</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" alt="GraphQL" />
+              <span>GraphQL</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+              <span>Python</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+              <span>FastAPI</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/langgraph.svg"
+                alt="LangGraph"
+              />
+              <span>LangGraph</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="Kafka" />
+              <span>Kafka</span>
+            </li>
           </ul>
         </div>
 
-        {/* Backend & Frameworks */}
+        {/* Data, Infrastructure & Cloud */}
         <div className="skill-card">
-          <h5>Backend & Frameworks</h5>
+          <p className="subheading_text">Data, Infrastructure & Cloud</p>
           <ul className="skills-icons">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" /><span>Node.js</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express.js" /><span>Express.js</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" /><span>Django</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" alt="Axios" /><span>Axios</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" alt="JSON" /><span>JSON</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original-wordmark.svg" alt="Apache Tomcat" /><span>Apache Tomcat</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" /><span>Next.js</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" alt="GraphQL" /><span>GraphQL</span></li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+              <span>PostgreSQL</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" />
+              <span>MySQL</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+              <span>MongoDB</span>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" />
+              <span>AWS</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
+              <span>Docker</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" />
+              <span>GCP</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" />
+              <span>Redis</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma" />
+              <span>Prisma</span>
+            </li>
+            <li>
+              <span className="skill-icon" aria-hidden>
+                🔄
+              </span>
+              <span>CI/CD (GitHub Actions)</span>
+            </li>
           </ul>
         </div>
 
-        {/* Databases & Cloud */}
+        {/* Engineering Practices */}
         <div className="skill-card">
-          <h5>Databases & Cloud</h5>
+          <p className="subheading_text">Engineering Practices</p>
           <ul className="skills-icons">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase" /><span>Firebase</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" /><span>PostgreSQL</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" /><span>MongoDB</span></li>
-            <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" /><span>AWS</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" /><span>Google Cloud</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" /><span>Docker</span></li>
-          </ul>
-        </div>
-
-        {/* Tools & Testing */}
-        <div className="skill-card">
-          <h5>Tools & Testing</h5>
-          <ul className="skills-icons">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" alt="JUnit" /><span>JUnit</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest" /><span>Jest</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" /><span>Git</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" /><span>GitHub</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" /><span>Jira</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" /><span>Figma</span></li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original-wordmark.svg" alt="Eclipse IDE" /><span>Eclipse IDE</span></li>
-            <li><img src="https://testing-library.com/img/octopus-64x64.png" alt="React Testing Library" /><span>React Testing Library</span></li>
-          </ul>
-        </div>
-
-        {/* Other Concepts */}
-        <div className="skill-card">
-          <h5>Other Concepts</h5>
-          <ul className="skills-icons">
-            <li><span className="skill-icon">⚙️</span><span>Data Structures & Algorithms</span></li>
-            <li><span className="skill-icon">📘</span><span>Object-Oriented Programming</span></li>
-            <li><span className="skill-icon">🌍</span><span>Web Development</span></li>
-            <li><span className="skill-icon">☁️</span><span>Cloud Concepts</span></li>
-            <li><span className="skill-icon">🧠</span><span>System Design</span></li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+              <span>Git</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest" />
+              <span>Jest</span>
+            </li>
+            <li>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" alt="JUnit" />
+              <span>JUnit</span>
+            </li>
+            <li>
+              <span className="skill-icon">🧠</span>
+              <span>System Design</span>
+            </li>
+            <li>
+              <span className="skill-icon">📐</span>
+              <span>Data Structures & Algorithms</span>
+            </li>
           </ul>
         </div>
 
       </div>
     </section>
-     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"🛠️"}/>
-        </>
   );
 };
 

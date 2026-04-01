@@ -7,16 +7,40 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import EmojiCursor from './EmojiCursor';
+// import EmojiCursor from './EmojiCursor';
+// import MIS from './MIS.png';
+
+/** Filter tab keys — keep in sync with each project's `categories` array. */
+const PROJECT_CATEGORY_TABS = [
+  { key: "all", label: "All" },
+  { key: "ai", label: "AI" },
+  { key: "ml", label: "ML" },
+  { key: "agentic", label: "Agentic AI" },
+  { key: "data", label: "Data" },
+  { key: "fullstack", label: "Full stack" },
+  { key: "cloud", label: "Cloud" },
+  { key: "uiux", label: "UI / UX" },
+];
+
 const projectsData = [
+      {
+      title: "LifeBoard",
+      image: "/images/lifeboardimg.png",
+      liveLink: "https://lifeboard-tawny.vercel.app/",
+      githubLink: "https://github.com/aparanji49/Lifeboard/",
+      demoLink:"#",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Prisma", "PostgreSQL", "Supabase", "NextAuth.js", "Google Calendar API", "LangGraph", "OpenAI API", "Zod", "Dexie", "Vercel"],
+      categories: ["ai", "agentic", "fullstack", "cloud", "uiux"],
+      description: `A personal productivity dashboard on Next.js (App Router) and React: tasks, natural-language scheduling checked against Google Calendar, and lightweight home widgets (clock, greeting, weather, quotes). A LangGraph agent parses intent, reads your calendar, and proposes free slots for overlaps, with human-in-the-loop approval before OAuth writes. IndexedDB captures tasks locally while PostgreSQL and Prisma keep cloud state in sync for the agent.`
+    },
     {
       title: "Musical Instrument Store",
-      image: "/images/MIS.png",
+      image: "/images/mis_picture.jpg",
       liveLink: "https://musical-instrument-store.vercel.app/",
       githubLink: "https://github.com/aparanji49/MusicalInstrumentStore/",
       demoLink:"#",
       tags: ["React","Vite", "TypeScript", "Redux", "Node.js", "Express", "GraphQL", "MongoDB", "Stripe", "OpenAI", "TailwindCSS", "Figma (Wireframes)", "Google OAuth"],
-      categories: ["fullstack", "uiux"] ,
+      categories: ["ai", "fullstack", "cloud", "uiux"],
       description: `A modern full-stack e-commerce application with cart and checkout (Stripe), Google OAuth login, and lightweight AI-powered product suggestions using the OpenAI API. Deployed on Vercel, Render, and MongoDB Atlas.`
     },
     {
@@ -26,7 +50,7 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/VocabBank",
       demoLink:"#",
       tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB Atlas", "Vercel", "Render", "Jest"],
-      categories: ["fullstack"],
+      categories: ["fullstack", "cloud"],
       description: `A full-stack vocabulary learning app with flashcards, search, pagination, and animated transitions. Built with MERN stack.`
     },
     {
@@ -36,7 +60,7 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/EnchantedPagesBookstore",
       demoLink:"https://youtu.be/KcUSFFzmGrg",
       tags: ["React.js", "Typescript", "HTML", "CSS", "RESTful APIs", "MySQL", "Tomcat", "AWS", "Figma (UI/UX)", "Accessibility"],
-      categories: ["fullstack", "uiux"],
+      categories: ["fullstack", "cloud", "uiux"],
       description: `A cloud-hosted bookstore app with React + TypeScript frontend, Java backend on Tomcat, and AWS deployment. Focused on modern UI and accessibility.`
     },
     {
@@ -66,7 +90,7 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/instagram-web-clone",
       demoLink:"https://youtu.be/qAO0vLCYQrI",
       tags: ["React.js", "CSS", "Firebase Authentication", "Firebase Database", "Firebase Storage", "Google Cloud Platform"],
-      categories: ["fullstack"],
+      categories: ["fullstack", "cloud"],
       description: `Social media clone featuring authentication, posts, comments, image uploads. Built with React and Firebase suite.`
     },
     {
@@ -76,7 +100,7 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/Hotel-Booking-Demand",
       demoLink:"#",
       tags: ["Python", "DASH", "Google Cloud Platform", "Data Visualization", "Kaggle", "Plotly", "Pandas", "Scikit-learn"],
-      categories: ["data"],
+      categories: ["data", "ml", "cloud"],
       description: `Visualization dashboard for hotel booking trends using Dash framework and Google Cloud deployment.`
     },
     {
@@ -86,7 +110,7 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/CloudComputingProjects/tree/main/Advanced%20Web%20App%20Deployment%20-%20AWS",
       demoLink:"#",
       tags: ["AWS", "EC2", "VPC", "Tomcat", "MySQL", "React.js", "Java (JSP/Servlet)", "Cloud Security", "Route 53"],
-      categories: ["cloud"],
+      categories: ["cloud", "fullstack"],
       description: `Advanced full-stack app deployment on AWS using custom VPC setup, secure architecture, and Tomcat-MySQL backend.`
     },
     {
@@ -126,8 +150,18 @@ const projectsData = [
       githubLink: "https://github.com/aparanji49/CloudComputingProjects/tree/main/ML%20based%20wine%20classifier%20using%20AWS%20SageMaker",
       demoLink:"#",
       tags: ["AWS SageMaker", "Machine Learning", "Python", "Scikit-learn", "AWS S3", "Cloud Deployment"],
-      categories: ["cloud", "data"],
+      categories: ["ml", "data", "cloud"],
       description: `End-to-end machine learning pipeline deployment for wine quality prediction using AWS SageMaker.`
+    },
+    {
+      title: "URLSafetyML",
+      image: "/images/safe-url-checker.jpg",
+      liveLink: "#",
+      githubLink: "https://github.com/aparanji49/URLSafetyML/",
+      demoLink: "#",
+      tags: ["Python", "Jupyter", "Scikit-learn", "Kaggle", "Feature Engineering", "Cybersecurity", "Classification", "Big Data"],
+      categories: ["ml", "data"],
+      description: `Advanced threat detection using machine learning for URL safety: a multi-class model distinguishes benign, phishing, malware, and defacement links on a large Kaggle malicious-URL dataset (650k+ samples). The pipeline extracts rich structural and statistical features from each URL and evaluates classifiers to support proactive, learning-based detection beyond static blocklists. Implemented in a Jupyter workflow with accompanying project report.`
     }
   ];
 
@@ -165,43 +199,22 @@ const projectsData = [
       fetchRepos();
     }, []);
     return (
-      <>
       <section id="projects-subsection" className="container-sm">
         <h2 className="section-heading display-6">Projects</h2>
   {/* Designed & Developed by Sai Aparanji Nemmani – © 2025 */}
 
            {/* Tabs Navigation */}
            <div className="tabs">
-        <button
-          className={`tab ${activeCategory === "all" ? "active" : ""}`}
-          onClick={() => setActiveCategory("all")}
-        >
-          All
-        </button>
-        <button
-          className={`tab ${activeCategory === "fullstack" ? "active" : ""}`}
-          onClick={() => setActiveCategory("fullstack")}
-        >
-          Full Stack Web Apps
-        </button>
-        <button
-          className={`tab ${activeCategory === "uiux" ? "active" : ""}`}
-          onClick={() => setActiveCategory("uiux")}
-        >
-          Frontend / UI & UX
-        </button>
-        <button
-          className={`tab ${activeCategory === "data" ? "active" : ""}`}
-          onClick={() => setActiveCategory("data")}
-        >
-          Data Visualization & ML
-        </button>
-        <button
-          className={`tab ${activeCategory === "cloud" ? "active" : ""}`}
-          onClick={() => setActiveCategory("cloud")}
-        >
-          Cloud Projects
-        </button>
+        {PROJECT_CATEGORY_TABS.map(({ key, label }) => (
+          <button
+            key={key}
+            type="button"
+            className={`tab ${activeCategory === key ? "active" : ""}`}
+            onClick={() => setActiveCategory(key)}
+          >
+            {label}
+          </button>
+        ))}
       </div>
 
       {/* Tabs Content */}
@@ -278,8 +291,6 @@ const projectsData = [
           </div>
         </div>
       </section>
-       <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"🌐"}/>
-          </>
     );
   };
   

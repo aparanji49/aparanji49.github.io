@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
 
-/* html, body{
+html, body{
     height: 100%;
-} */
+}
+
+/* Keep horizontal clipping off `html`/`body` so `position: sticky` on `header` works
+   (overflow on ancestors breaks sticky). Clip page content in `main` instead. */
+body.body_custom > main {
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+body.body_custom {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 body,
 .body_custom {
@@ -166,14 +179,14 @@ button:focus-visible {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
 .main-text {
-  padding: 30px;
+  padding: 1rem;
   display: flex;
-  flex: 1;
+  flex: 60%;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -232,7 +245,115 @@ button:focus-visible {
   margin-bottom: 100px;
 }
 
-footer {
+/* REMOVE this global rule entirely */
+/* footer { display:flex; ... } */
+
+.site-footer {
+  width: 100%;
+  margin-top: 0;
+  padding: 20px 16px;
+
+  background: transparent;
+  border-top: 1px solid rgba(71, 62, 102, 0.18);
+}
+
+
+.site-footer__row {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+.site-footer__left {
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  gap: 4px;
+}
+
+.site-footer__title {
+  font-family: "Freehand", cursive;
+  font-size: 1rem;
+  color: #473e66;
+}
+
+.site-footer__copy {
+  font-size: 0.75rem;
+  color: rgba(71, 62, 102, 0.65);
+}
+
+
+.site-footer__icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.site-footer__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(71, 62, 102, 0.18);
+  background: rgba(255, 255, 255, 0.22);
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.site-footer__icon:hover {
+  transform: translateY(-1px);
+  background: rgba(71, 62, 102, 0.08);
+}
+
+@media (max-width: 700px) {
+  .site-footer__row {
+    justify-content: center;
+    text-align: center;
+  }
+  .site-footer__icons {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.site-footer__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.site-footer__brand{
+  font-family:"Freehand", cursive;
+  font-size:1rem;
+  color:#182638;
+}
+
+
+/* Dark mode footer */
+.dark .site-footer {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.dark .site-footer__title,
+.dark .site-footer__copy {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark .site-footer__icon {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+/* footer { */
   /* display: flex;
   margin-top: 1rem;
   margin-top: auto;
@@ -245,12 +366,14 @@ footer {
   /* width: 100%;
   left: 0; */
 
+  /* display: flex;
   padding: 0.5rem;
+  justify-content: center; */
   /* background-color: #f5f5f5; */
-  text-align: center;
+  /* text-align: center; */
   /* padding: 1rem;
   color: #333; */
-}
+/* } */
 
 #edu-work-section {
   display: grid;
@@ -298,6 +421,24 @@ footer {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  #edu-work-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    column-gap: 0;
+    padding: 1.5rem 0.75rem;
+  }
+
+  #edu-work-section .hor-div-line {
+    display: none;
+  }
+
+  #edu-work-section .timeline-pin {
+    display: none !important;
+  }
+}
+
 /* ============================================== */
 
 .dates {
@@ -312,6 +453,10 @@ footer {
 
 .body_links {
   color: #d5876a;
+}
+
+#experience-subsection{
+  padding: 0 1.5rem;
 }
 
 .edu-card,
@@ -408,7 +553,7 @@ nav li a:focus::before {
 .footer__text {
   font-family: "Freehand", cursive;
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #182638;
 }
 
@@ -430,7 +575,7 @@ nav li a:focus::before {
 .project_header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.4rem;
 }
 .project_header .h4 {
@@ -478,17 +623,28 @@ nav li a:focus::before {
 }
 
 .image {
-  flex: 1;
+  flex: 40%;
   height: max-content;
   display: flex;
   justify-content: center;
-  min-width: 300px;
+  min-width: 0;
   align-items: center;
 }
 
 .intro_text {
   /* font-size: 16px; */
   font-size: 1rem;
+  padding: 0;
+}
+
+.intro_skills_text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #473e66;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume_image {
@@ -514,7 +670,7 @@ nav li a:focus::before {
 }
 
 #about-subsection > * {
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .about,
@@ -658,7 +814,7 @@ padding: 0;
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -703,7 +859,9 @@ padding: 0;
   border-radius: 20px;
   padding: 6px;
   border: 1px solid #777777;
-  width: 400px;
+  width: min(400px, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
   height: 50px;
 }
 
@@ -725,14 +883,16 @@ padding: 0;
 }
 
 .about__icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .image_about {
   filter: drop-shadow(0 0 0.2rem rgb(70, 70, 70));
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+  height: auto;
+  max-height: 300px;
+  width: min(350px, 100%);
+  max-width: 100%;
+  border-radius: 30%;
 }
 
 .about__icon:hover {
@@ -770,19 +930,71 @@ padding: 0;
 .about__icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 2rem;
+  justify-content: center;
+  /* width: 100%; */
+  padding: 1rem 0;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
+
+/* Pill container */
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.5rem;
+  border-radius: 9999px;
+
+  color: #473e66;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  background: rgba(255, 255, 255, 0.35); /* glass */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(71, 62, 102, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Icon size */
+.social-pill svg {
+  font-size: 1rem;
+}
+
+/* Handle text */
+.social-text {
+  white-space: nowrap;
+}
+
+/* Hover */
+.social-pill:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(71, 62, 102, 0.25);
+  background: rgba(71, 62, 102, 0.08);
+}
+
+/* Active click */
+.social-pill:active {
+  transform: scale(0.97);
+}
+
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 2rem;
   gap: 2rem;
-  width: 80%;
+  width: min(95%, 1200px);
   margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill-card {
@@ -806,11 +1018,13 @@ padding: 0;
 }
 
 .skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 1rem 0.75rem;
   list-style: none;
-  padding: 0;
+  padding: 1rem 0;
   margin: 0;
 }
 
@@ -819,9 +1033,17 @@ padding: 0;
   flex-direction: column;
   align-items: center;
   font-size: 0.85rem;
-  width: 70px;
+  width: 100%;
+  max-width: 88px;
+  min-width: 0;
   text-align: center;
   color: var(--text-color, #333);
+}
+
+@media (max-width: 360px) {
+  .skills-icons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .dark .skill-icons li span {
@@ -922,7 +1144,9 @@ padding: 0;
   background-color: black;
   color: white;
   padding: 1.2rem;
-  width: 18.7rem;
+  width: min(18.7rem, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -958,6 +1182,28 @@ padding: 0;
   width: 100%;
 }
 
+.about_text_div{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.about_text_div .intro_text {
+  max-width: 600px;
+  flex: 60%;
+  padding: 1rem;
+}
+
+.about_gif{
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
 .card-box {
   width: 100%;
   max-width: 80%;
@@ -980,7 +1226,8 @@ padding: 0;
 }
 
 .medium-blog-card {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background-color: #ffffff;
   border-radius: 20px;
   border: 1px solid black;
@@ -1038,7 +1285,7 @@ padding: 0;
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2.5rem;
   justify-items: center;
   align-items: start;  /* important to keep card tops aligned */
@@ -1279,9 +1526,25 @@ padding: 0;
   /* Add more styling as you like */
 /* } */
 @media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-text {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .project-card {
     max-width: 90%;
-    padding: 1rem;
+    min-height: auto;
+    /* padding: 1rem; */
   }
   .tabs {
     gap: 0.5rem;
@@ -1295,9 +1558,19 @@ padding: 0;
     max-width: 100%;
   }
 
+  /* Hero name: allow wrapping on narrow viewports (typing animation uses nowrap on desktop) */
+  .typewriter {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .typewriter h2 {
     padding-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    width: 100% !important;
   }
 
   #edu-work-section {
@@ -1337,5 +1610,259 @@ padding: 0;
   .LI-profile-badge {
     justify-content: center;
   }
+
+  .about_text_div {
+    flex-direction: column;
+  }
+
+  .skills-section {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+/* .about_text_div .intro_text {
+  max-width: 600px;
+  flex: 60%;
+}
+
+.about_gif{
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+} */
 }
 /* =========================================== */
+/* CTA Container (optional spacing control) */
+.cta-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.75rem;
+
+  background-color: #473e66;
+  color: #ffffff;
+
+  border-radius: 9999px; /* pill shape */
+  text-decoration: none;
+  font-weight: 500;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Text */
+.cta-text {
+  display: inline-block;
+}
+
+/* Arrow */
+.cta-arrow {
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.25s ease;
+}
+
+/* Hover Effects */
+.cta-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(71, 62, 102, 0.35);
+  background-color: #3b3357; /* slightly darker */
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translateX(6px);
+}
+
+/* Active (click) feedback */
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+
+.headerBar {
+  padding: 12px 16px;
+}
+
+/* Keep top row stable */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo smaller and consistent */
+.headerLogo {
+  width: 34px;
+  height: 34px;
+}
+
+/* Better hamburger button */
+.headerToggler {
+  border: 1px solid rgba(71, 62, 102, 0.25);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(71, 62, 102, 0.50);
+  backdrop-filter: blur(20px);
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.headerToggler:hover {
+  transform: translateY(-1px);
+  background: rgba(71, 62, 102, 0.50);
+}
+
+#hamButton:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Mobile: make the expanded menu feel intentional */
+@media (max-width: 991px) {
+  /* Stack nav links without wide horizontal margins from desktop `nav a` */
+  .menu .navbar-nav a {
+    margin-right: 0;
+  }
+
+  /* Logo link also matches `nav a`; keep a small gap only */
+  .menu .navbar-brand {
+    margin-right: 0.5rem;
+  }
+
+  .navbar-collapse.show {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(71, 62, 102, 0.18);
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 6px;
+  }
+
+  /* Reduce switch size slightly on mobile so it doesn't look oversized */
+  .switch {
+    width: 70px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .flicker {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    top: 4px;
+    left: 4px;
+  }
+
+  .moon {
+    top: 5px;
+    left: 40px;
+  }
+}
+
+/* Narrow phones: smaller logo so header + toggler fit comfortably */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-height: 48px;
+    width: auto;
+    height: auto;
+  }
+
+  .menu {
+    padding-left: 0.75rem;
+  }
+}
+
+/* Contact: LinkedIn badge iframe can be wider than the viewport */
+.linkedinbadge {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+.linkedinbadge .LI-profile-badge,
+.linkedinbadge .badge-base {
+  max-width: 100%;
+}
+
+.linkedinbadge iframe {
+  max-width: 100% !important;
+}
+
+/* ============================= */
+/* Social pills - Dark mode fix  */
+/* ============================= */
+
+.dark .social-pill {
+  background: rgba(255, 255, 255, 0.10);            /* subtle glass on dark */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.dark .social-pill:hover {
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.dark .social-text {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Optional: ensure icons are crisp inside pills */
+.dark .social-pill svg {
+  color: rgba(255, 255, 255, 0.92);
+}
+/* Dark mode CTA */
+.dark .cta-button {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.highlight_text_italic {
+  font-style: italic;
+  color: #473e66;
+}
+
+.highlight_text_bold {
+  font-weight: bold;
+  color: #473e66;
+}
+
+.subheading_text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #473e66;
+  margin-bottom: 0.5rem;
+}

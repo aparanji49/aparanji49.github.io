@@ -4,7 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
-import EmojiCursor from "./EmojiCursor";
+// import EmojiCursor from "./EmojiCursor";
 const designsData = [
   
    {
@@ -103,7 +103,7 @@ const Designs = () => {
                   </div>))}
     
     </section>
-     <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"👩‍🎨"}/>
+     {/* <EmojiCursor idleMs={1500} sizeRem={2} jitterPx={3} idleEmoji={"😴"} activeEmoji={"👩‍🎨"}/> */}
         </>
   );
 };
