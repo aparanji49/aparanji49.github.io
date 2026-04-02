@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://aparanji49.github.io/sitemap.xml
