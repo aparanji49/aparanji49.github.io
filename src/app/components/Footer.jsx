@@ -37,6 +37,8 @@
 
 // export default Footer;
 import React from "react";
+import Link from "next/link";
+import { SITE } from "../../config/site";
 
 const Footer = () => {
   return (
@@ -44,6 +46,15 @@ const Footer = () => {
       <div className="site-footer__row">
         <div className="site-footer__left">
           <div className="site-footer__title">Designed & Developed by Aparanji</div>
+          <p className="site-footer__tagline">
+            Full-stack software engineer · Web apps, REST APIs, LLMs & cloud
+          </p>
+          <nav className="site-footer__links" aria-label="Quick links">
+            <Link href="/projects/">Projects</Link>
+            <Link href="/experience/">Education &amp; work</Link>
+            <Link href={SITE.resumeUrl}>Resume</Link>
+            <Link href="/contact/">Contact</Link>
+          </nav>
           <p className="site-footer__copy">© {new Date().getFullYear()}</p>
         </div>
 

@@ -1,8 +1,10 @@
+"use client";
 
-'use client'; 
-
-import React, { useEffect } from 'react';
-// import EmojiCursor from './EmojiCursor';
+import React, { useEffect } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 const ContactForm = () => {
@@ -25,12 +27,53 @@ const ContactForm = () => {
       <h2 className="section-heading display-6">Contact Me</h2>
       <div className="row contact">
         {/* Left Column */}
-        <div className="col-md-6 col-sm-12 contact-form-div">
+        <div className="col-md-6 col-sm-12 contact-form-div contact-form-div--lead">
           <div className="contact-title">
             <div className="h5">Get in touch!</div>
           </div>
 
-          {/* Mail Button */}
+          <div className="contact-details" aria-label="Contact information">
+            <a
+              className="contact-detail-row contact-detail-row--link"
+              href="mailto:nsaiaparanji@gmail.com"
+            >
+              <span className="contact-detail-icon" aria-hidden>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </span>
+              <span className="contact-detail-text">nsaiaparanji@gmail.com</span>
+            </a>
+            <a
+              className="contact-detail-row contact-detail-row--link"
+              href="tel:+15716415925"
+            >
+              <span className="contact-detail-icon" aria-hidden>
+                <FontAwesomeIcon icon={faPhone} />
+              </span>
+              <span className="contact-detail-text">(571) 641-5925</span>
+            </a>
+            <Link
+              className="contact-detail-row contact-detail-row--link"
+              href="https://www.linkedin.com/in/saiaparanjinemmani/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="contact-detail-icon" aria-hidden>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </span>
+              <span className="contact-detail-text">
+                linkedin.com/in/saiaparanjinemmani
+              </span>
+            </Link>
+            <div className="contact-detail-row">
+              <span className="contact-detail-icon" aria-hidden>
+                <FontAwesomeIcon icon={faLocationDot} />
+              </span>
+              <span className="contact-detail-text contact-detail-text--muted">
+                USA (open to relocation across US)
+              </span>
+            </div>
+          </div>
+
           <a
             className="mail-button"
             href="mailto:nsaiaparanji@gmail.com"

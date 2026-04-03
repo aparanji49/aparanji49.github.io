@@ -1,7 +1,12 @@
 // src/app/designs/page.jsx
-import Designs from '../components/Designs';
-import React from 'react';
+import React from "react";
+import Designs from "../components/Designs";
 
+export const metadata = {
+  title: "Designs",
+  description:
+    "UI/UX design work and Figma wireframes — portfolio, Lifeboard, and other product design explorations.",
+};
 const DesignsPage = () => {
   return (
     <>

@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Link from "next/link";
 // import EmojiCursor from './EmojiCursor';
 // import MIS from './MIS.png';
 
@@ -254,6 +255,20 @@ const projectsData = [
           </div>
         ))}
       </div>
+
+        <p className="text-center mt-4 mb-2 px-2" style={{ fontSize: "0.95rem" }}>
+          <Link href="/experience/" className="body_links">
+            Employment timeline &amp; education
+          </Link>
+          <span className="text-muted mx-2">·</span>
+          <Link href="/skills/" className="body_links">
+            Skills &amp; stack
+          </Link>
+          <span className="text-muted mx-2">·</span>
+          <Link href="/contact/" className="body_links">
+            Get in touch
+          </Link>
+        </p>
 
                 {/* More from GitHub Section */}
                 <div className="github-space">

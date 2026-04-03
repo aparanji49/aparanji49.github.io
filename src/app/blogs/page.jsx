@@ -2,6 +2,12 @@
 
 import Blogs from "../components/Blogs";
 
+export const metadata = {
+  title: "Tech Blogs",
+  description:
+    "Technical writing and articles by Sai Aparanji Nemmani on software engineering, web development, and related topics.",
+};
+
 const BlogsPage = () => {
   return (
     <>

@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 // import EmojiCursor from "./EmojiCursor";
 import CTAButton from "./CTAButton";
+import { SITE } from "../../config/site";
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
             </p>
 
             <div className="typewriter">
-              <h2 className="display-6">SAI APARANJI NEMMANI</h2>
+              <h1 className="display-6">SAI APARANJI NEMMANI</h1>
             </div>
 
             <br />
@@ -50,25 +51,34 @@ export default function Hero() {
             A Computer Science Graduate student at Virginia Tech 👩‍💻
           </p> */}
             <p className="intro_text">
-              Full-stack software engineer shipping{" "}
+              I’m a <strong>full-stack software engineer</strong> shipping{" "}
               <strong>production web applications</strong> and{" "}
-              <strong>scalable REST APIs</strong>, with hands-on experience
-              integrating <strong>LLMs and generative AI</strong> into real
-              products—frontend through backend, data, and cloud. I own
-              features end to end: React and Next.js (TypeScript), Java/Spring
-              and Node services, databases, AWS deployment, and CI/CD.
+              <strong>scalable REST APIs</strong>, with hands-on work integrating{" "}
+              <strong>LLMs and generative AI</strong> into real products. Recent
+              experience includes Next.js and TypeScript (including{" "}
+              <strong>React Query</strong>), <strong>Java/Spring Boot microservices</strong>, Node.js,{" "}
+              <strong>Kafka</strong>-backed event workflows, MongoDB and PostgreSQL,{" "}
+              <strong>AWS</strong>, and <strong>CI/CD</strong> (GitHub Actions, GitLab, Vercel). I’m also
+              building <strong>FastAPI</strong> pipelines for <strong>LLM inference</strong> over
+              structured review data. I own features end to end—from UX and APIs to deployment and reliability.
               <span className="intro_skills_text">
-                React • Next.js • TypeScript • Java • Spring Boot • Node.js •
-                Python • REST APIs • MongoDB • PostgreSQL • AWS • LLMs
+                React • Next.js • TypeScript • React Query • Java • Spring Boot •
+                Node.js • Kafka • Python / FastAPI • REST • MongoDB • PostgreSQL •
+                AWS • LLMs
               </span>
-              Nearly four years in production software; M.Eng. Computer Science,
-              Virginia Tech (3.88 GPA) 👩‍💻.
+              Nearly four years in production software;{" "}
+              <strong>M.Eng. Computer Science, Virginia Tech</strong> (3.88 GPA) 👩‍💻.
             </p>
 
 
-            {/* Call to Action Buttons */}
-
-            <CTAButton text="View Projects" href="/projects" />
+            <div className="hero-cta-row">
+              <CTAButton text="View projects" href="/projects" />
+              <CTAButton
+                text="View resume"
+                href={SITE.resumeUrl}
+                variant="secondary"
+              />
+            </div>
 
             {/* Social Handles */}
             <div className="about__icons">
@@ -117,7 +127,7 @@ export default function Hero() {
             <Image
               className="image_about"
               src="images/hero-image.png"
-              alt="Sai Aparanji Image"
+              alt="Sai Aparanji Nemmani — full-stack software engineer"
               width={500}
               height={300}
             />

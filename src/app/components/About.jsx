@@ -154,22 +154,23 @@ const About = () => {
         <div className="about_text_div about_text card-box">
           <div>
             <p className="intro_text">
-              I’m a <strong>full-stack software engineer</strong> with nearly
-              four years shipping <strong>production web applications</strong>{" "}
-              and <strong>REST APIs</strong>, including work that integrates{" "}
-              <strong>LLMs and generative AI</strong> into real products. My
-              background spans TypeScript (React/Next.js), Java (Spring Boot), and Node.js backends, alongside SQL/NoSQL architecture, AWS, and automated CI/CD pipelines. I hold
-              an <strong>M.Eng. in Computer Science from Virginia Tech</strong>{" "}
-              (3.88 GPA) and I’m focused on full-stack roles where I can own features end to end—from UX clarity to scalable
-              services and reliable releases.
+              I’m a <strong>full-stack software engineer</strong> with nearly four years of experience shipping <strong>production web applications</strong> and <strong>REST APIs</strong>. Currently at <strong>Virginia Tech</strong>, I'm designing and building a <strong>Next.js / TypeScript</strong> analytics app for peer evaluations with <strong>AI-powered insights</strong>, <strong>React Query</strong>-backed dashboards, JWT/RBAC on <strong>MongoDB</strong>, and a <strong>Kafka</strong>-driven notification pipeline for high-volume assignment events. I’m also building a <strong>FastAPI</strong> <strong>LLM inference</strong> pipeline for structured review text. Earlier at <strong>Virtusa</strong>, I maintained <strong>Spring Boot microservices</strong>, <strong>Redis</strong> caching, and React/Redux frontends for high-traffic financial workflows; at <strong>Bunchful</strong>, I shipped React and Firebase full-stack features with strong Lighthouse performance.
             </p>
             <p className="intro_text">
-              I enjoy turning fuzzy requirements into intuitive flows, debugging
-              carefully, and keeping code readable and refactor-friendly. I’m
-              usually tinkering with a new framework or API to understand where
-              it fits. I’m most interested in working on <strong>high-traffic, production systems</strong> where performance
-              and collaboration matter. I’m looking for teams that care about
-              shipping software that stays maintainable as it scales.
+              I hold an <strong>M.Eng. in Computer Science from Virginia Tech</strong> (3.88 GPA) and am focused on <strong>full-time U.S. roles</strong> where I can own features end to end. I enjoy turning fuzzy requirements into clear product behavior, debugging carefully, and keeping code readable. I’m motivated by <strong>high-traffic, production systems</strong> where reliability and collaboration matter.
+            </p>
+            <p className="intro_text">
+              <strong>Oracle Certified Associate — Java SE 8</strong> (
+              <a
+                className="body_links"
+                href="https://drive.google.com/file/d/1rsk6J09d8R2gA_lGgQoQFKGFQV_GK5eN/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Java SE 8 certification"
+              >
+                view certification
+              </a>
+              ).
             </p>
           </div>
           <div className="about_gif">
@@ -183,12 +184,29 @@ const About = () => {
           </div>
         </div>
 
+        <div className="about_text card-box mt-3">
+          <h3 className="subheading_text mb-2">What you can expect</h3>
+          <ul className="about-expect-list">
+            <li className="intro_text">
+              <strong>Product-minded delivery</strong> — clear UX, measurable outcomes, and pragmatic tradeoffs.
+            </li>
+            <li className="intro_text">
+              <strong>Ownership across the stack</strong> — APIs, data, caching, tests, CI/CD, and production behavior.
+            </li>
+            <li className="intro_text">
+              <strong>Collaboration</strong> — explicit communication and code teammates can extend.
+            </li>
+            <li className="intro_text">
+              <strong>AI-assisted daily workflow</strong> — I use <strong>Cursor</strong> and <strong>Google Gemini</strong> to move faster on implementation, refactors, and research, with the same bar for review, tests, and production-ready quality.
+            </li>
+          </ul>
+        </div>
+
         {/* Beyond code card */}
         <div className="about_text card-box mt-3">
           <h3 className="subheading_text mb-2">Beyond code</h3>
           <p className="intro_text">
-            When I’m not coding, I recharge through <strong>singing</strong>,{" "}
-            <strong>painting</strong>, and <strong>sketching</strong>. These
+            When I’m not coding, I recharge through <strong>singing</strong>, <strong>painting</strong>, and <strong>sketching</strong>. These
             creative outlets help me slow down and think more deliberately,
             which often carries over into how I design interfaces/features and explain my
             work.

@@ -2,6 +2,12 @@
 
 import Contact from "../components/Contact";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contact Sai Aparanji Nemmani — email, phone, LinkedIn. Full-stack software engineer open to roles across the United States.",
+};
+
 const ContactPage = () => {
   return (
     <>
