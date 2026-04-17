@@ -5,7 +5,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link";
-import { SITE } from "../../config/site";
+// import { SITE } from "../../config/site";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,9 +74,9 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link href="/blogs">Tech Blogs</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href={SITE.resumeUrl}>Resume</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link href="/contact">Contact</Link>
               </li>

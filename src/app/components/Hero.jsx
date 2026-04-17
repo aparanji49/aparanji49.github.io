@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 // import EmojiCursor from "./EmojiCursor";
 import CTAButton from "./CTAButton";
-import { SITE } from "../../config/site";
+// import { SITE } from "../../config/site";
 
 export default function Hero() {
   return (
@@ -73,11 +73,11 @@ export default function Hero() {
 
             <div className="hero-cta-row">
               <CTAButton text="View projects" href="/projects" />
-              <CTAButton
+              {/* <CTAButton
                 text="View resume"
                 href={SITE.resumeUrl}
                 variant="secondary"
-              />
+              /> */}
             </div>
 
             {/* Social Handles */}

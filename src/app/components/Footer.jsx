@@ -38,7 +38,7 @@
 // export default Footer;
 import React from "react";
 import Link from "next/link";
-import { SITE } from "../../config/site";
+// import { SITE } from "../../config/site";
 
 const Footer = () => {
   return (
@@ -52,7 +52,7 @@ const Footer = () => {
           <nav className="site-footer__links" aria-label="Quick links">
             <Link href="/projects/">Projects</Link>
             <Link href="/experience/">Education &amp; work</Link>
-            <Link href={SITE.resumeUrl}>Resume</Link>
+            {/* <Link href={SITE.resumeUrl}>Resume</Link> */}
             <Link href="/contact/">Contact</Link>
           </nav>
           <p className="site-footer__copy">© {new Date().getFullYear()}</p>
